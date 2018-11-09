@@ -24,10 +24,10 @@
 		<div class="govuk-grid-row">
 		    <div class="govuk-grid-column-two-thirds">
 				<h1 class="govuk-heading-xl">
-					Organisation name
+					{{ data.organisation.name }}
 				</h1>
 
-				<p class="govuk-body-l">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore recusandae in quasi vitae, sapiente dignissimos, iusto exercitationem. Quidem blanditiis expedita minus numquam fugit, suscipit itaque, obcaecati molestias excepturi nulla facilis.</p>
+				{% if data.organisation.description.length %}<p class="govuk-body-l">{{ data.organisation.description }}</p>{% endif %}
 
 				<a href="./service-name">Service name 1</a>
 		      

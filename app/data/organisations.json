@@ -1,0 +1,54 @@
+[
+    {
+      "code": "CICA",
+      "name": "Criminal Injuries Compensation Authority",
+      "slug": "criminal-injuries-compensation-authority",
+      "description": "The Criminal Injuries Compensation Authority (CICA) deals with compensation claims from people who have been physically or mentally injured because they were the victim of a violent crime in England, Scotland or Wales."
+    },
+    {
+      "code": "HMCTS",
+      "name": "Her Majesty's Courts and Tribunals Service",
+      "slug": "her-majestys-courts-and-tribunals-service",
+      "description": "HM Courts & Tribunals Service is responsible for the administration of criminal, civil and family courts and tribunals in England and Wales."
+    },
+    {
+      "code": "HMPPS",
+      "name": "Her Majesty's Prisons and Probation Service",
+      "slug": "her-majestys-prisons-and-probation-service",
+      "description": "HM Prisons & Probation Service carry out sentences given by the courts, in custody and the community, and rehabilitate people in our care through education and employment."
+    },
+    {
+      "code": "HQ",
+      "name": "Head Quarters",
+      "slug": "head-quarters"
+    },
+    {
+      "code": "LAA",
+      "name": "Legal Aid Agency",
+      "slug": "legal-aid-agency",
+      "description": "The Legal Aid Agency (LAA) provides civil and criminal legal aid and advice in England and Wales to help people deal with their legal problems."
+    },
+    {
+      "code": "OPG",
+      "name": "Office of the Public Guardian",
+      "slug": "office-of-the-public-guardian",
+      "description": "The Office of the Public Guardian (OPG) protects people in England and Wales who may not have the mental capacity to make certain decisions for themselves, such as about their health and finance."
+    },
+    {
+      "code": "OSPT",
+      "name": "Official Solicitor and Public Trustee",
+      "slug": "official-solicitor-and-public-trustee",
+      "description": "The Official Solicitor and Public Trustee helps people who are vulnerable because of their lack of mental capacity or young age to take advantage of the services offered by the justice system. This helps them to avoid being socially excluded."
+    },
+    {
+      "code": "OTHER",
+      "name": "Other",
+      "slug": "other"
+    },
+    {
+      "code": "YJB",
+      "name": "Youth Justice Board",
+      "slug": "youth-justice-board",
+      "description": "The Youth Justice Board (YJB) of England and Wales are a non-departmental public body responsible for overseeing the youth justice system in England and Wales."
+    }
+]

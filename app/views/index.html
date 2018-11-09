@@ -24,8 +24,14 @@
 
 				<p class="govuk-body-l">Services delivered by the Ministry of Justice and related organisations as an end user would know them.</p>
 
-				<a href="./hmpps/">HMPPS</a>
-		      
+				<ul>
+				{% for organisation in data.organisations -%}
+					<li>
+						<a href="./{{ organisation.slug }}/">{{ organisation.name }}</a>
+					</li>
+				{%- endfor %}
+				</ul>
+
 		    </div>
 		</div>
 	
