@@ -4,38 +4,32 @@
   List of services provided by the Ministry of Justice, UK
 {% endblock %}
 
+{% block beforeContent %}
+{#{ govukPhaseBanner({
+	"tag": {
+		"text": "alpha"
+	},
+	"html": "This is a new service - your <a href=\"#\">feedback</a> will help us to improve it."
+}) }#}
+{% endblock %}
+
 {% block content %}
-<div class="govuk-width-container">
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">
+			Ministry of Justice services
+		</h1>
 
-	{#{ govukPhaseBanner({
-		"tag": {
-			"text": "alpha"
-		},
-		"html": "This is a new service - your <a href=\"#\">feedback</a> will help us to improve it."
-	}) }#}
+		<p class="govuk-body-l">Services delivered by the Ministry of Justice and related organisations as an end user would know them.</p>
 
-	<main class="govuk-main-wrapper">
+		<ul class="govuk-list">
+		{% for organisation in data.organisations -%}
+			<li>
+				<a class="govuk-link" href="./{{ organisation.slug }}/">{{ organisation.name }}</a>
+			</li>
+		{%- endfor %}
+		</ul>
 
-		<div class="govuk-grid-row">
-		    <div class="govuk-grid-column-two-thirds">
-				<h1 class="govuk-heading-xl">
-					Ministry of Justice services
-				</h1>
-
-				<p class="govuk-body-l">Services delivered by the Ministry of Justice and related organisations as an end user would know them.</p>
-
-				<ul>
-				{% for organisation in data.organisations -%}
-					<li>
-						<a href="./{{ organisation.slug }}/">{{ organisation.name }}</a>
-					</li>
-				{%- endfor %}
-				</ul>
-
-		    </div>
-		</div>
-	
-	</main>
-
+    </div>
 </div>
 {% endblock %}
