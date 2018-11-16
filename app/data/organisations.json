@@ -41,14 +41,14 @@
       "description": "The Official Solicitor and Public Trustee helps people who are vulnerable because of their lack of mental capacity or young age to take advantage of the services offered by the justice system. This helps them to avoid being socially excluded."
     },
     {
-      "code": "OTHER",
-      "name": "Other",
-      "slug": "other"
-    },
-    {
       "code": "YJB",
       "name": "Youth Justice Board",
       "slug": "youth-justice-board",
       "description": "The Youth Justice Board (YJB) of England and Wales are a non-departmental public body responsible for overseeing the youth justice system in England and Wales."
+    },
+    {
+      "code": "OTHER",
+      "name": "Other",
+      "slug": "other"
     }
 ]

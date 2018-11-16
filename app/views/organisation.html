@@ -27,8 +27,12 @@
 
 		{% if data.organisation.description.length %}<p class="govuk-body-l">{{ data.organisation.description }}</p>{% endif %}
 
-		<a class="govuk-link" href="./service-name">Service name 1</a>
-      
+		<ul class="govuk-list">
+		{%- for service in data.services %}
+			<li><a class="govuk-link" href="./{{ service.slug }}">{{ service.name }}</a></li>
+		{% endfor -%}
+		</ul>
+
     </div>
 </div>
 {% endblock %}

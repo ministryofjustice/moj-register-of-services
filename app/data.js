@@ -3,11 +3,11 @@ let services = require('./data/services.json');
 
 module.exports = {
 
-	getOrganisations: function() {
+	getOrganisations: () => {
 		return organisations;
 	},
 
-	getOrganisation: function(organisation) {
+	getOrganisation: (organisation) => {
 		if (!organisation) return null
 
 		let data = organisations.filter( (obj) => {
@@ -17,12 +17,24 @@ module.exports = {
 		return data[0];
 	},
 
-	getServicesByOrganisation: function(organisation) {
-		
+	getServicesByOrganisation: (organisation) => {
+		if (!organisation) return null
+
+		let data = services.filter( (obj) => {
+	        return !!~obj.organisation.indexOf(organisation);
+	    });
+
+		return data;
 	},
 
-	getService: function(service) {
-		
+	getService: (service) => {
+		if (!service) return null
+
+		let data = services.filter( (obj) => {
+			return (obj.slug == service);
+		})
+
+		return data[0];
 	}
 
 }

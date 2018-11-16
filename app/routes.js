@@ -4,8 +4,6 @@ const router = express.Router();
 const data = require('./data');
 
 router.get('/', (req, res) => {
-	
-	console.log(data.getOrganisations());
 
 	res.render('index',
 		{
@@ -13,11 +11,12 @@ router.get('/', (req, res) => {
 				organisations: data.getOrganisations()
 			}
 		});
+
 });
 
 router.get('/:organisation/', (req, res) => {
 
-	console.log(data.getOrganisation(req.params.organisation));
+	let organisation = data.getOrganisation(req.params.organisation);
 
 	res.render('organisation',
 		{
@@ -25,13 +24,15 @@ router.get('/:organisation/', (req, res) => {
 				'back': `${req.baseUrl}/`
 			},
 			data: {
-				organisation: data.getOrganisation(req.params.organisation),
-				services: data.getServicesByOrganisation(req.params.organisation)
+				organisation: organisation,
+				services: data.getServicesByOrganisation(organisation.code)
 			}
 		});
+
 });
 
 router.get('/:organisation/:service/', (req, res) => {
+
 	res.render('service',
 		{
 			links: {
@@ -42,6 +43,7 @@ router.get('/:organisation/:service/', (req, res) => {
 				service: data.getService(req.params.service)
 			}
 		});
+
 });
 
 module.exports = router
