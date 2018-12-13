@@ -47,13 +47,13 @@
 				Service name
 				</dt>
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Title 1
+					Journey
 				</dd>
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Title 2
+					Type
 				</dd>
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Title 3
+					Monthly users
 				</dd>
 				<dd class="app-check-your-answers__change">
 					&nbsp;
@@ -61,20 +61,35 @@
 			</div>
 			{%- for service in data.services %}
 			<div class="app-check-your-answers__contents">
-				<dt class="app-check-your-answers__question govuk-!-font-weight-regular">
+				<dt class="app-check-your-answers__question">
 				{{ service.name }}
+				<p class="govuk-body">{{ service.description }}</p>
 				</dt>
 				<dd class="app-check-your-answers__answer">
-					Data 1
+					
+					<ol class="govuk-list govuk-list--number">
+					{%- for step in service.journey %}
+						<li>{{ step }}</li>
+					{% endfor -%}
+					</ol>
+
 				</dd>
 				<dd class="app-check-your-answers__answer">
-					Data 2
+					<ul class="govuk-list">
+					{%- for type in service.types %}
+						<li>{{ type }}</li>
+					{% endfor -%}
+					</ul>
 				</dd>
 				<dd class="app-check-your-answers__answer">
-					Data 3
+					{% if service.data.users > 0 %}
+					{{ service.data.users }}
+					{% else %}
+					<span class="mojuk-body-emphasis">Unknown</span>
+					{% endif %}
 				</dd>
 				<dd class="app-check-your-answers__change">
-					<a href="#">
+					<a href="{{ service.url.full }}">
 					View<span class="govuk-visually-hidden"> {{ service.name }}</span>
 					</a>
 				</dd>
