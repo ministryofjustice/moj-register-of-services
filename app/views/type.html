@@ -1,0 +1,36 @@
+{% extends "./layout.html" %}
+
+{% block pageTitle %}
+  List of services provided by the Ministry of Justice, UK
+{% endblock %}
+
+{% block beforeContent %}
+{#{ govukPhaseBanner({
+	"tag": {
+		"text": "alpha"
+	},
+	"html": "This is a new service - your <a href=\"#\">feedback</a> will help us to improve it."
+}) }#}
+
+{{ govukBackLink({
+	"href": links.back,
+	"text": "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+      	<!-- <span class="govuk-caption-xl">{{ data.organisation.name }}</span> -->
+        {#{ data.service.name }#}
+        Type
+      </h1>
+
+      {#%- if data.service.description.length %}
+        <p class="govuk-body-l">{{ data.service.description }}</p>
+      {% endif -%#}
+
+    </div>
+</div>
+{% endblock %}

@@ -22,14 +22,27 @@
 
 		<p class="govuk-body-l">Services delivered by the Ministry of Justice and related organisations as an end user would know them.</p>
 
-		<ul class="govuk-list">
-		{% for organisation in data.organisations -%}
-			<li>
-				<a class="govuk-link" href="./{{ organisation.slug }}/">{{ organisation.name }}</a>
-			</li>
-		{%- endfor %}
-		</ul>
-
     </div>
+</div>
+
+{% include "./includes/_stats.html" %}
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h2 class="govuk-heading-l">Organisations</h2>
+		<!-- <ul class="govuk-list"> -->
+		{% for organisation in data.organisations -%}
+		<h3 class="govuk-heading-m">{{ organisation.name }}</h3>
+		<p class="govuk-body">
+			{{ organisation.description }}
+		</p>
+			<p class="govuk-body"><a class="govuk-link" href="./{{ organisation.slug }}/" title="View all services by {{ organisation.name }}">View all services</a> <span class="govuk-visually-hidden"> by {{ organisation.name }}</span></p>
+
+			<!-- <li>
+				<a class="govuk-link" href="./{{ organisation.slug }}/">{{ organisation.name }}</a>
+			</li> -->
+		{%- endfor %}
+		<!-- </ul> -->
+	</div>
 </div>
 {% endblock %}

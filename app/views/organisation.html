@@ -27,12 +27,67 @@
 
 		{% if data.organisation.description.length %}<p class="govuk-body-l">{{ data.organisation.description }}</p>{% endif %}
 
-		<ul class="govuk-list">
-		{%- for service in data.services %}
-			<li><a class="govuk-link" href="./{{ service.slug }}">{{ service.name }}</a></li>
-		{% endfor -%}
-		</ul>
-
     </div>
 </div>
+
+{% include "./includes/_stats.html" %}
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+		<h2 class="govuk-heading-l">
+			Services
+		</h2>
+
+		{% if data.services.length %}
+
+		
+		<dl class="app-check-your-answers app-check-your-answers--short">
+			<div class="app-check-your-answers__contents">
+				<dt class="app-check-your-answers__question">
+				Service name
+				</dt>
+				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
+					Title 1
+				</dd>
+				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
+					Title 2
+				</dd>
+				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
+					Title 3
+				</dd>
+				<dd class="app-check-your-answers__change">
+					&nbsp;
+				</dd>
+			</div>
+			{%- for service in data.services %}
+			<div class="app-check-your-answers__contents">
+				<dt class="app-check-your-answers__question govuk-!-font-weight-regular">
+				{{ service.name }}
+				</dt>
+				<dd class="app-check-your-answers__answer">
+					Data 1
+				</dd>
+				<dd class="app-check-your-answers__answer">
+					Data 2
+				</dd>
+				<dd class="app-check-your-answers__answer">
+					Data 3
+				</dd>
+				<dd class="app-check-your-answers__change">
+					<a href="#">
+					View<span class="govuk-visually-hidden"> {{ service.name }}</span>
+					</a>
+				</dd>
+			</div>
+			{% endfor -%}
+		</dl>
+
+		{% else %}
+
+			<p class="govuk-body">There are no services provided by {{ data.organisation.name }}</p>
+
+		{% endif %}
+	</div>
+</div>
+
 {% endblock %}
