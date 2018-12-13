@@ -83,7 +83,7 @@
 				</dd>
 				<dd class="app-check-your-answers__answer">
 					{% if service.data.users > 0 %}
-					{{ service.data.users }}
+					{{ service.data.users | numeral("0,00") }}
 					{% else %}
 					<span class="mojuk-body-emphasis">Unknown</span>
 					{% endif %}

@@ -1,3 +1,6 @@
+// https://www.npmjs.com/package/nunjucks-numeral-filter
+let numeralFilter = require('nunjucks-numeral-filter')
+
 module.exports = function (env) {
   /**
    * Instantiate object used to store the methods registered as a
@@ -5,7 +8,9 @@ module.exports = function (env) {
    * gov.uk core filters by creating filter methods of the same name.
    * @type {Object}
    */
-  var filters = {}
+  let filters = {}
+
+  filters.numeral = numeralFilter
 
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:
