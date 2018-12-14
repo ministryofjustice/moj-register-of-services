@@ -52,9 +52,9 @@
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 					Type
 				</dd>
-				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
+				<!-- <dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 					Monthly users
-				</dd>
+				</dd> -->
 				<dd class="app-check-your-answers__change">
 					&nbsp;
 				</dd>
@@ -81,13 +81,13 @@
 					{% endfor -%}
 					</ul>
 				</dd>
-				<dd class="app-check-your-answers__answer">
+				<!-- <dd class="app-check-your-answers__answer">
 					{% if service.data.users > 0 %}
 					{{ service.data.users | numeral("0,00") }}
 					{% else %}
 					<span class="mojuk-body-emphasis">Unknown</span>
 					{% endif %}
-				</dd>
+				</dd> -->
 				<dd class="app-check-your-answers__change">
 					<a href="{{ service.url.full }}">
 					View<span class="govuk-visually-hidden"> {{ service.name }}</span>
