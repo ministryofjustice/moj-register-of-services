@@ -9,10 +9,10 @@ router.get('/', (req, res) => {
 		{
 			links: {
 				types: {
-					'digital_by_default': `${req.baseUrl}/type/digital-by-default`,
-					'not_digital_by_default': `${req.baseUrl}/type/not-digital-by-default`,
-					'information_site': `${req.baseUrl}/type/information-site`,
-					'paper_based': `${req.baseUrl}/type/paper-based`
+					'digital_by_default': `${req.baseUrl}/maturity/digital-by-default`,
+					'not_digital_by_default': `${req.baseUrl}/maturity/not-digital-by-default`,
+					'information_site': `${req.baseUrl}/maturity/information-site`,
+					'paper_based': `${req.baseUrl}/maturity/paper-based`
 				}
 			},
 			data: {
@@ -31,10 +31,10 @@ router.get('/:organisation/', (req, res) => {
 			links: {
 				'back': `${req.baseUrl}/`,
 				types: {
-					'digital_by_default': `${req.baseUrl}/${req.params.organisation}/type/digital-by-default`,
-					'not_digital_by_default': `${req.baseUrl}/${req.params.organisation}/type/not-digital-by-default`,
-					'information_site': `${req.baseUrl}/${req.params.organisation}/type/information-site`,
-					'paper_based': `${req.baseUrl}/${req.params.organisation}/type/paper-based`
+					'digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/digital-by-default`,
+					'not_digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/not-digital-by-default`,
+					'information_site': `${req.baseUrl}/${req.params.organisation}/maturity/information-site`,
+					'paper_based': `${req.baseUrl}/${req.params.organisation}/maturity/paper-based`
 				}
 			},
 			data: {
@@ -45,44 +45,31 @@ router.get('/:organisation/', (req, res) => {
 
 });
 
-router.get('/type/:type/', (req, res) => {
+router.get('/maturity/:maturity/', (req, res) => {
 
-	res.render('type',
+	res.render('maturity',
 		{
 			links: {
 				'back': `${req.baseUrl}/`
 			},
 			data: {
-				
+				title: data.getServiceMaturityTitle(req.params.maturity)
 			}
 		});
 
 });
 
-router.get('/:organisation/:service/', (req, res) => {
+router.get('/:organisation/maturity/:maturity/', (req, res) => {
 
-	res.render('service',
+	res.render('maturity',
 		{
 			links: {
 				'back': `${req.baseUrl}/${req.params.organisation}/`
 			},
 			data: {
+				title: data.getServiceMaturityTitle(req.params.maturity),
 				organisation: data.getOrganisation(req.params.organisation),
-				service: data.getService(req.params.service)
-			}
-		});
-
-});
-
-router.get('/:organisation/type/:type/', (req, res) => {
-
-	res.render('type',
-		{
-			links: {
-				'back': `${req.baseUrl}/${req.params.organisation}/`
-			},
-			data: {
-				
+				services: data.getServiceByMaturity(req.params.maturity)
 			}
 		});
 
