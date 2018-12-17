@@ -1,7 +1,27 @@
 let organisations = require('./data/organisations.json');
 let services = require('./data/services.json');
 
+let digital_maturity = ["digital-by-default","not-digital-by-default","information-site","paper-based"];
+
 module.exports = {
+
+	isValidOrganisation: (organisation) => {
+		if (!organisation) return false
+
+
+	},
+
+	isValidService: (service) => {
+		if (!service) return false
+
+			
+	},
+
+	isValidMaturity: (maturity) => {
+		if (!maturity) return false
+
+		return (!!~digital_maturity.indexOf(maturity));
+	},
 
 	getOrganisations: () => {
 		return organisations;
@@ -37,7 +57,7 @@ module.exports = {
 		return data[0];
 	},
 
-	getServiceByMaturity: (maturity) => {
+	getServicesByMaturity: (maturity) => {
 		if (!maturity) return null
 
 		let data = services.filter( (obj) => {

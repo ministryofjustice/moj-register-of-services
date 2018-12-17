@@ -22,56 +22,86 @@ router.get('/', (req, res) => {
 
 });
 
-router.get('/:organisation/', (req, res) => {
+router.get('/maturity/:maturity/', (req, res) => {
 
-	let organisation = data.getOrganisation(req.params.organisation);
-
-	res.render('organisation',
-		{
-			links: {
-				'back': `${req.baseUrl}/`,
-				types: {
-					'digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/digital-by-default`,
-					'not_digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/not-digital-by-default`,
-					'information_site': `${req.baseUrl}/${req.params.organisation}/maturity/information-site`,
-					'paper_based': `${req.baseUrl}/${req.params.organisation}/maturity/paper-based`
+	if (!data.isValidMaturity(req.params.maturity)) {
+	
+		res.redirect('/');
+	
+	}
+	else {
+	
+		res.render('maturity',
+			{
+				links: {
+					'back': `${req.baseUrl}/`
+				},
+				data: {
+					title: data.getServiceMaturityTitle(req.params.maturity)
 				}
-			},
-			data: {
-				organisation: organisation,
-				services: data.getServicesByOrganisation(organisation.code)
-			}
-		});
+			});
+
+	}
 
 });
 
-router.get('/maturity/:maturity/', (req, res) => {
+router.get('/:organisation/', (req, res) => {
 
-	res.render('maturity',
-		{
-			links: {
-				'back': `${req.baseUrl}/`
-			},
-			data: {
-				title: data.getServiceMaturityTitle(req.params.maturity)
-			}
-		});
+	if (req.params.organisation == 'maturity') {
+	
+		res.redirect('/');
+	
+	}
+	else {
 
+		let organisation = data.getOrganisation(req.params.organisation);
+
+		res.render('organisation',
+			{
+				links: {
+					'back': `${req.baseUrl}/`,
+					types: {
+						'digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/digital-by-default`,
+						'not_digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/not-digital-by-default`,
+						'information_site': `${req.baseUrl}/${req.params.organisation}/maturity/information-site`,
+						'paper_based': `${req.baseUrl}/${req.params.organisation}/maturity/paper-based`
+					}
+				},
+				data: {
+					organisation: organisation,
+					services: data.getServicesByOrganisation(organisation.code)
+				}
+			});
+
+	}
+
+});
+
+router.get('/:organisation/maturity/', (req, res) => {
+	res.redirect('/' + req.params.organisation + '/');
 });
 
 router.get('/:organisation/maturity/:maturity/', (req, res) => {
 
-	res.render('maturity',
-		{
-			links: {
-				'back': `${req.baseUrl}/${req.params.organisation}/`
-			},
-			data: {
-				title: data.getServiceMaturityTitle(req.params.maturity),
-				organisation: data.getOrganisation(req.params.organisation),
-				services: data.getServiceByMaturity(req.params.maturity)
-			}
-		});
+	if (!data.isValidMaturity(req.params.maturity)) {
+
+		res.redirect('/' + req.params.organisation + '/');
+
+	}
+	else {
+
+		res.render('maturity',
+			{
+				links: {
+					'back': `${req.baseUrl}/${req.params.organisation}/`
+				},
+				data: {
+					title: data.getServiceMaturityTitle(req.params.maturity),
+					organisation: data.getOrganisation(req.params.organisation),
+					services: data.getServicesByMaturity(req.params.maturity)
+				}
+			});
+	}
 
 });
 
