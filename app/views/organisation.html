@@ -39,64 +39,12 @@
 		</h2>
 
 		{% if data.services.length %}
-		
-		<dl class="app-check-your-answers app-check-your-answers--short">
-			<div class="app-check-your-answers__contents">
-				<dt class="app-check-your-answers__question">
-				Service name
-				</dt>
-				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Type
-				</dd>
-				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Journey
-				</dd>
-				<!-- <dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Monthly users
-				</dd> -->
-				<dd class="app-check-your-answers__change">
-					&nbsp;
-				</dd>
-			</div>
-			{%- for service in data.services %}
-			<div class="app-check-your-answers__contents">
-				<dt class="app-check-your-answers__question">
-				{{ service.name }}
-				<p class="govuk-body">{{ service.description }}</p>
-				</dt>
-				<dd class="app-check-your-answers__answer">
-					<ul class="govuk-list">
-					{%- for type in service.types %}
-						<li>{{ type }}</li>
-					{% endfor -%}
-					</ul>
-				</dd>
-				<dd class="app-check-your-answers__answer">
-					<ol class="govuk-list govuk-list--number">
-					{%- for step in service.journey %}
-						<li>{{ step }}</li>
-					{% endfor -%}
-					</ol>
-				</dd>
-				<!-- <dd class="app-check-your-answers__answer">
-					{% if service.data.users > 0 %}
-					{{ service.data.users | numeral("0,00") }}
-					{% else %}
-					<span class="mojuk-body-emphasis">Unknown</span>
-					{% endif %}
-				</dd> -->
-				<dd class="app-check-your-answers__change">
-					<a href="{{ service.url.full }}">
-					View<span class="govuk-visually-hidden"> {{ service.name }}</span>
-					</a>
-				</dd>
-			</div>
-			{% endfor -%}
-		</dl>
+
+			{% include "./includes/_list.html" %}
 
 		{% else %}
 
-			<p class="govuk-body">There are no services provided by {{ data.organisation.name }}</p>
+			<p class="govuk-body">There are no &#8220;{{ data.title | lower }}&#8221; services provided by {{ data.organisation.name | default("Ministry of Justice") }}</p>
 
 		{% endif %}
 	</div>

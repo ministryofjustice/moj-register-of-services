@@ -30,4 +30,23 @@
 
     </div>
 </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+      Services
+    </h2>
+
+    {% if data.services.length %}
+
+      {% include "./includes/_list.html" %}
+
+    {% else %}
+
+      <p class="govuk-body">There are no &#8220;{{ data.title | lower }}&#8221; services provided by {{ data.organisation.name | default("Ministry of Justice") }}</p>
+
+    {% endif %}
+  </div>
+</div>
+
 {% endblock %}
