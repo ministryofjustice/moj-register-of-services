@@ -47,10 +47,10 @@
 				Service name
 				</dt>
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Journey
+					Type
 				</dd>
 				<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-					Type
+					Journey
 				</dd>
 				<!-- <dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 					Monthly users
@@ -66,20 +66,18 @@
 				<p class="govuk-body">{{ service.description }}</p>
 				</dt>
 				<dd class="app-check-your-answers__answer">
-					
-					<ol class="govuk-list govuk-list--number">
-					{%- for step in service.journey %}
-						<li>{{ step }}</li>
-					{% endfor -%}
-					</ol>
-
-				</dd>
-				<dd class="app-check-your-answers__answer">
 					<ul class="govuk-list">
 					{%- for type in service.types %}
 						<li>{{ type }}</li>
 					{% endfor -%}
 					</ul>
+				</dd>
+				<dd class="app-check-your-answers__answer">
+					<ol class="govuk-list govuk-list--number">
+					{%- for step in service.journey %}
+						<li>{{ step }}</li>
+					{% endfor -%}
+					</ol>
 				</dd>
 				<!-- <dd class="app-check-your-answers__answer">
 					{% if service.data.users > 0 %}
