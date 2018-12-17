@@ -1,0 +1,33 @@
+.moj-box {
+
+}
+
+.moj-box__content {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.moj-box__content p {
+  color: govuk-colour("white");
+}
+
+.moj-box__content p a {
+  color: govuk-colour("white");
+  text-decoration: none;
+}
+
+.moj-box--digital {
+	background-color: govuk-colour("turquoise");
+}
+
+.moj-box--non-digital {
+	background-color: govuk-colour("bright-red");
+}
+
+.moj-box--paper {
+	background-color: govuk-colour("grey-1");
+}
+
+.moj-box--info {
+	background-color: govuk-colour("purple");
+}
