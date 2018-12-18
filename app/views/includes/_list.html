@@ -3,6 +3,11 @@
 		<dt class="app-check-your-answers__question">
 		Service name
 		</dt>
+		{% if data.list_type == 'department' %}
+		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
+			Organisation
+		</dd>
+		{% endif %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 			Type
 		</dd>
@@ -19,9 +24,14 @@
 	{%- for service in data.services %}
 	<div class="app-check-your-answers__contents">
 		<dt class="app-check-your-answers__question">
-		{{ service.name }}
-		<p class="govuk-body">{{ service.description }}</p>
+			{{ service.name }}
+			<p class="govuk-body">{{ service.description }}</p>
 		</dt>
+		{% if data.list_type == 'department' %}
+		<dd class="app-check-your-answers__answer">
+			{{ service.organisation }}
+		</dd>
+		{% endif %}
 		<dd class="app-check-your-answers__answer">
 			<ul class="govuk-list">
 			{%- for type in service.types %}

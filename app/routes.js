@@ -40,10 +40,11 @@ router.get('/maturity/:maturity/', (req, res) => {
 		res.render('maturity',
 			{
 				links: {
-					'back': `${req.baseUrl}/`
+					back: `${req.baseUrl}/`
 				},
 				data: {
 					title: data.getDigitalMaturityTitle(req.params.maturity),
+					list_type: 'department',
 					services: data.getServicesByDigitalMaturity(req.params.maturity)
 				}
 			});
@@ -68,7 +69,7 @@ router.get('/:organisation/', (req, res) => {
 		res.render('organisation',
 			{
 				links: {
-					'back': `${req.baseUrl}/`,
+					back: `${req.baseUrl}/`,
 					types: {
 						'digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/digital-by-default`,
 						'not_digital_by_default': `${req.baseUrl}/${req.params.organisation}/maturity/not-digital-by-default`,
@@ -110,10 +111,11 @@ router.get('/:organisation/maturity/:maturity/', (req, res) => {
 		res.render('maturity',
 			{
 				links: {
-					'back': `${req.baseUrl}/${req.params.organisation}/`
+					back: `${req.baseUrl}/${req.params.organisation}/`
 				},
 				data: {
 					title: data.getDigitalMaturityTitle(req.params.maturity),
+					list_type: 'organisation',
 					organisation: organisation,
 					services: data.getServicesByOrganisationAndDigitalMaturity(organisation.code,req.params.maturity)
 				}
