@@ -8,6 +8,7 @@
         "full": "https://www.gov.uk/claim-compensation-criminal-injury",
         "path": "/claim-compensation-criminal-injury"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -26,6 +27,7 @@
         "full": "https://www.gov.uk/compensation-victim-terrorist-attack",
         "path": "/compensation-victim-terrorist-attack"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -44,6 +46,7 @@
         "full": "https://www.gov.uk/compensation-victim-crime-abroad",
         "path": "/compensation-victim-crime-abroad"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -61,6 +64,7 @@
         "full": "https://www.gov.uk/financial-support-victim-of-crime",
         "path": "/financial-support-victim-of-crime"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -79,6 +83,7 @@
         "full": "https://www.gov.uk/child-adoption",
         "path": "/child-adoption"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -86,10 +91,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 20066
-      }
+      ]
     },
     {
       "id": "HMCTS002",
@@ -101,6 +103,7 @@
         "full": "https://www.gov.uk/guidance/agricultural-land-and-drainage-disputes-apply-to-a-tribunal",
         "path": "/guidance/agricultural-land-and-drainage-disputes-apply-to-a-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -108,10 +111,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 82
-      }
+      ]
     },
     {
       "id": "HMCTS003",
@@ -123,16 +123,14 @@
         "full": "https://www.gov.uk/appeal-call-up-reserve-forces/appeal-to-the-tribunal",
         "path": "/appeal-call-up-reserve-forces/appeal-to-the-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
       "journey": [
         "GOV.UK page",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 9991
-      }
+      ]
     },
     {
       "id": "HMCTS004",
@@ -144,6 +142,7 @@
         "full": "https://www.gov.uk/guidance/appeal-to-the-court-of-appeal-civil-division",
         "path": "/guidance/appeal-to-the-court-of-appeal-civil-division"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -151,10 +150,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 3919
-      }
+      ]
     },
     {
       "id": "HMCTS005",
@@ -166,6 +162,7 @@
         "full": "https://www.gov.uk/upper-tribunal-immigration-asylum/how-to-appeal",
         "path": "/upper-tribunal-immigration-asylum/how-to-appeal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -173,10 +170,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2429
-      }
+      ]
     },
     {
       "id": "HMCTS006",
@@ -188,6 +182,7 @@
         "full": "https://www.gov.uk/appeal-housing-benefit-decision",
         "path": "/appeal-housing-benefit-decision"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Appeal"
       ],
@@ -195,10 +190,7 @@
         "GOV.UK page",
         "Digital (not digital by default)",
         "Digital (3rd-party service)"
-      ],
-      "data": {
-        "users": 5226
-      }
+      ]
     },
     {
       "id": "HMCTS007",
@@ -210,6 +202,7 @@
         "full": "https://www.gov.uk/appeal-against-sentence-conviction",
         "path": "/appeal-against-sentence-conviction"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -217,10 +210,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 4651
-      }
+      ]
     },
     {
       "id": "HMCTS008",
@@ -232,6 +222,7 @@
         "full": "https://www.gov.uk/appeal-sen-statement-decision/appeal-to-the-tribunal",
         "path": "/appeal-sen-statement-decision/appeal-to-the-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -239,10 +230,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 147
-      }
+      ]
     },
     {
       "id": "HMCTS009",
@@ -254,6 +242,7 @@
         "full": "https://www.gov.uk/guidance/appeal-against-a-ban-on-your-organisation",
         "path": "/guidance/appeal-against-a-ban-on-your-organisation"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -261,10 +250,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 40
-      }
+      ]
     },
     {
       "id": "HMCTS010",
@@ -276,6 +262,7 @@
         "full": "https://www.gov.uk/guidance/appeal-against-a-charity-commission-decision-about-your-charity",
         "path": "/guidance/appeal-against-a-charity-commission-decision-about-your-charity"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -283,10 +270,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 88
-      }
+      ]
     },
     {
       "id": "HMCTS011",
@@ -298,6 +282,7 @@
         "full": "https://www.gov.uk/appeal-against-a-penalty-charge-notice/out-of-time",
         "path": "/appeal-against-a-penalty-charge-notice/out-of-time"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -305,10 +290,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2124
-      }
+      ]
     },
     {
       "id": "HMCTS012",
@@ -320,6 +302,7 @@
         "full": "https://www.gov.uk/immigration-asylum-tribunal",
         "path": "/immigration-asylum-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -327,10 +310,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 8393
-      }
+      ]
     },
     {
       "id": "HMCTS013",
@@ -342,6 +322,7 @@
         "full": "https://www.gov.uk/guidance/environmental-fines-or-notices-appeal-against-a-regulator",
         "path": "/guidance/environmental-fines-or-notices-appeal-against-a-regulator"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -349,32 +330,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 40
-      }
-    },
-    {
-      "id": "HMCTS014",
-      "name": "Appeal against the Information Commissioner",
-      "slug": "appeal-against-the-information-commissioner",
-      "organisation": "HMCTS",
-      "description": "How to appeal to a Tribunal against the Information Commissioner's Office or ask the Tribunal to direct a response if you have not heard from the Information Commissioner’s Office.",
-      "url": {
-        "full": "https://www.gov.uk/guidance/information-rights-appeal-against-the-commissioners-decision",
-        "path": "/guidance/information-rights-appeal-against-the-commissioners-decision"
-      },
-      "types": [
-        "Appeal"
-      ],
-      "journey": [
-        "GOV.UK page",
-        "Form download",
-        "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 506
-      }
+      ]
     },
     {
       "id": "HMCTS015",
@@ -386,6 +342,7 @@
         "full": "https://www.gov.uk/appeal-first-tier-asylum-support-tribunal",
         "path": "/appeal-first-tier-asylum-support-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -393,10 +350,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2094
-      }
+      ]
     },
     {
       "id": "HMCTS016",
@@ -408,6 +362,7 @@
         "full": "https://www.gov.uk/appeal-ehc-plan-decision/appeal-as-a-parent",
         "path": "/appeal-ehc-plan-decision/appeal-as-a-parent"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -415,10 +370,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 455
-      }
+      ]
     },
     {
       "id": "HMCTS017",
@@ -430,6 +382,7 @@
         "full": "https://www.gov.uk/guidance/appeal-to-the-care-standards-tribunal#how-to-appeal",
         "path": "/guidance/appeal-to-the-care-standards-tribunal#how-to-appeal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -449,6 +402,7 @@
         "full": "https://www.gov.uk/appeal-employment-appeal-tribunal",
         "path": "/appeal-employment-appeal-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -456,10 +410,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1445
-      }
+      ]
     },
     {
       "id": "HMCTS019",
@@ -471,6 +422,7 @@
         "full": "https://www.gov.uk/guidance/appeal-to-the-primary-health-lists-tribunal",
         "path": "/guidance/appeal-to-the-primary-health-lists-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -478,10 +430,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 92
-      }
+      ]
     },
     {
       "id": "HMCTS020",
@@ -493,6 +442,7 @@
         "full": "https://www.gov.uk/social-security-child-support-tribunal",
         "path": "/social-security-child-support-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -500,10 +450,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1
-      }
+      ]
     },
     {
       "id": "HMCTS021",
@@ -515,6 +462,7 @@
         "full": "https://appeal-tax-tribunal.service.gov.uk/",
         "path": "/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Appeal"
       ],
@@ -532,6 +480,7 @@
         "full": "https://appeal-tax-tribunal.service.gov.uk/closure",
         "path": "/closure"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -549,6 +498,7 @@
         "full": "https://www.gov.uk/tax-upper-tribunal",
         "path": "/tax-upper-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -556,10 +506,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 183
-      }
+      ]
     },
     {
       "id": "HMCTS024",
@@ -571,6 +518,7 @@
         "full": "https://www.gov.uk/apply-gender-recognition-certificate",
         "path": "/apply-gender-recognition-certificate"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -578,10 +526,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 3222
-      }
+      ]
     },
     {
       "id": "HMCTS025",
@@ -593,6 +538,7 @@
         "full": "https://www.gov.uk/wills-probate-inheritance/applying-for-a-grant-of-representation",
         "path": "/wills-probate-inheritance/applying-for-a-grant-of-representation"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -600,10 +546,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 44959
-      }
+      ]
     },
     {
       "id": "HMCTS026",
@@ -615,6 +558,7 @@
         "full": "https://www.gov.uk/oneoff-decision-personal-welfare",
         "path": "/oneoff-decision-personal-welfare"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -622,10 +566,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1484
-      }
+      ]
     },
     {
       "id": "HMCTS027",
@@ -637,6 +578,7 @@
         "full": "https://www.gov.uk/apply-transcript-court-tribunal-hearing",
         "path": "/apply-transcript-court-tribunal-hearing"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -644,10 +586,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 3174
-      }
+      ]
     },
     {
       "id": "HMCTS028",
@@ -659,6 +598,7 @@
         "full": "https://www.gov.uk/government/collections/cremation-forms-and-guidance",
         "path": "/government/collections/cremation-forms-and-guidance"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -666,10 +606,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1129
-      }
+      ]
     },
     {
       "id": "HMCTS029",
@@ -681,6 +618,7 @@
         "full": "https://www.gov.uk/apply-for-an-exhumation-licence",
         "path": "/apply-for-an-exhumation-licence"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -688,10 +626,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1128
-      }
+      ]
     },
     {
       "id": "HMCTS030",
@@ -703,6 +638,7 @@
         "full": "https://www.gov.uk/guidance/deprivation-of-liberty-orders",
         "path": "/guidance/deprivation-of-liberty-orders"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -710,10 +646,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 873
-      }
+      ]
     },
     {
       "id": "HMCTS031",
@@ -725,15 +658,13 @@
         "full": "https://www.gov.uk/apply-for-bankruptcy",
         "path": "/apply-for-bankruptcy"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 9070
-      }
+      ]
     },
     {
       "id": "HMCTS032",
@@ -745,6 +676,7 @@
         "full": "https://www.gov.uk/appeal-upper-tribunal-lands",
         "path": "/appeal-upper-tribunal-lands"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply",
         "Appeal"
@@ -753,10 +685,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 530
-      }
+      ]
     },
     {
       "id": "HMCTS033",
@@ -768,6 +697,7 @@
         "full": "https://www.gov.uk/apply-to-bankrupt-someone",
         "path": "/apply-to-bankrupt-someone"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -777,10 +707,7 @@
         "Phone or post (incl. email) service",
         "Digital (not digital by default)",
         "Digital (3rd-party service)"
-      ],
-      "data": {
-        "users": 3644
-      }
+      ]
     },
     {
       "id": "HMCTS034",
@@ -792,6 +719,7 @@
         "full": "https://www.gov.uk/litigation-friend/apply",
         "path": "/litigation-friend/apply"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -799,10 +727,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 514
-      }
+      ]
     },
     {
       "id": "HMCTS035",
@@ -813,6 +738,7 @@
         "full": "https://apply-to-court-about-child-arrangements.dsd.io/",
         "path": "/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -830,6 +756,7 @@
         "full": "https://www.gov.uk/apply-land-registration-tribunal",
         "path": "/apply-land-registration-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -837,10 +764,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 601
-      }
+      ]
     },
     {
       "id": "HMCTS037",
@@ -852,6 +776,7 @@
         "full": "https://www.gov.uk/mental-health-tribunal/apply-to-tribunal",
         "path": "/mental-health-tribunal/apply-to-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -859,10 +784,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 204
-      }
+      ]
     },
     {
       "id": "HMCTS038",
@@ -874,6 +796,7 @@
         "full": "https://www.gov.uk/guidance/approved-driving-instructors-appeal-a-decision-by-the-registrar",
         "path": "/guidance/approved-driving-instructors-appeal-a-decision-by-the-registrar"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -881,10 +804,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 122
-      }
+      ]
     },
     {
       "id": "HMCTS039",
@@ -896,6 +816,7 @@
         "full": "https://www.gov.uk/arranging-child-maintenance-yourself",
         "path": "/arranging-child-maintenance-yourself"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -904,10 +825,7 @@
         "Digital (not digital by default)",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 23438
-      }
+      ]
     },
     {
       "id": "HMCTS040",
@@ -919,16 +837,14 @@
         "full": "https://www.gov.uk/ask-crown-court-sentence-review",
         "path": "/ask-crown-court-sentence-review"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
       "journey": [
         "GOV.UK page",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1292
-      }
+      ]
     },
     {
       "id": "HMCTS041",
@@ -939,6 +855,7 @@
         "full": "https://www.gov.uk/become-magistrate",
         "path": "/become-magistrate"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -946,10 +863,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 10403
-      }
+      ]
     },
     {
       "id": "HMCTS042",
@@ -960,6 +874,7 @@
         "full": "https://www.gov.uk/guidance/administrative-court-bring-a-case-to-the-court",
         "path": "/guidance/administrative-court-bring-a-case-to-the-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -967,10 +882,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1810
-      }
+      ]
     },
     {
       "id": "HMCTS043",
@@ -981,6 +893,7 @@
         "full": "https://www.gov.uk/guidance/queens-bench-division-bring-a-case-to-the-court",
         "path": "/guidance/queens-bench-division-bring-a-case-to-the-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -988,10 +901,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1162
-      }
+      ]
     },
     {
       "id": "HMCTS044",
@@ -1002,15 +912,13 @@
         "full": "https://www.gov.uk/calculate-your-child-maintenance",
         "path": "/calculate-your-child-maintenance"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Calculator"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 214852
-      }
+      ]
     },
     {
       "id": "HMCTS045",
@@ -1021,6 +929,7 @@
         "full": "https://casetracker.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -1037,6 +946,7 @@
         "full": "https://www.gov.uk/mandatory-reconsideration/how-to-ask-for-mandatory-reconsideration",
         "path": "/mandatory-reconsideration/how-to-ask-for-mandatory-reconsideration"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1044,10 +954,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 10750
-      }
+      ]
     },
     {
       "id": "HMCTS047",
@@ -1058,6 +965,7 @@
         "full": "https://www.gov.uk/guidance/gangmaster-licensing-appeals-challenge-a-licence-decision",
         "path": "/guidance/gangmaster-licensing-appeals-challenge-a-licence-decision"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1065,10 +973,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 14
-      }
+      ]
     },
     {
       "id": "HMCTS048",
@@ -1079,6 +984,7 @@
         "full": "https://www.gov.uk/change-name-deed-poll",
         "path": "/change-name-deed-poll"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1086,10 +992,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 49046
-      }
+      ]
     },
     {
       "id": "HMCTS049",
@@ -1100,6 +1003,7 @@
         "full": "https://www.gov.uk/government/publications/civil-claims-rates-calculator",
         "path": "/government/publications/civil-claims-rates-calculator"
       },
+      "maturity": "paper-based",
       "types": [
         "Calculator"
       ],
@@ -1107,10 +1011,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 557
-      }
+      ]
     },
     {
       "id": "HMCTS050",
@@ -1121,6 +1022,7 @@
         "full": "https://www.gov.uk/government/publications/poca-forms-for-solicitors-and-advocates",
         "path": "/government/publications/poca-forms-for-solicitors-and-advocates"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -1128,10 +1030,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 291
-      }
+      ]
     },
     {
       "id": "HMCTS051",
@@ -1142,6 +1041,7 @@
         "full": "https://www.gov.uk/compensation-road-property-value/who-can-claim",
         "path": "/compensation-road-property-value/who-can-claim"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -1149,10 +1049,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 309
-      }
+      ]
     },
     {
       "id": "HMCTS052",
@@ -1163,6 +1060,7 @@
         "full": "https://www.gov.uk/complain-judge-magistrate-tribunal-coroner",
         "path": "/complain-judge-magistrate-tribunal-coroner"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1170,10 +1068,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1252
-      }
+      ]
     },
     {
       "id": "HMCTS053",
@@ -1184,6 +1079,7 @@
         "full": "https://www.gov.uk/complain-about-school/disability-discrimination",
         "path": "/complain-about-school/disability-discrimination"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1191,10 +1087,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 523
-      }
+      ]
     },
     {
       "id": "HMCTS054",
@@ -1205,16 +1098,14 @@
         "full": "https://www.gov.uk/court-fees-what-they-are",
         "path": "/court-fees-what-they-are"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
       "journey": [
         "GOV.UK page",
         "Information"
-      ],
-      "data": {
-        "users": 43076
-      }
+      ]
     },
     {
       "id": "HMCTS055",
@@ -1225,6 +1116,7 @@
         "full": "https://xhibit.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -1241,6 +1133,7 @@
         "full": "https://www.justice.gov.uk/courts/court-lists",
         "path": "/courts/court-lists"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -1257,6 +1150,7 @@
         "full": "https://www.employmenttribunals.service.gov.uk/employment-tribunal-response",
         "path": "/employment-tribunal-response"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -1273,6 +1167,7 @@
         "full": "https://www.gov.uk/evicting-tenants",
         "path": "/evicting-tenants"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1280,10 +1175,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 12531
-      }
+      ]
     },
     {
       "id": "HMCTS059",
@@ -1294,15 +1186,13 @@
         "full": "https://www.gov.uk/search-will-probate",
         "path": "/search-will-probate"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 48586
-      }
+      ]
     },
     {
       "id": "HMCTS060",
@@ -1313,6 +1203,7 @@
         "full": "https://www.gov.uk/find-court-money",
         "path": "/find-court-money"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -1320,10 +1211,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 923
-      }
+      ]
     },
     {
       "id": "HMCTS061",
@@ -1333,6 +1221,7 @@
       "url": {
         "full": "hmctsformfinder.justice.gov.uk/HMCTS/FormFinder.do"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Information"
       ],
@@ -1349,6 +1238,7 @@
         "full": "https://courttribunalfinder.service.gov.uk/search/",
         "path": "/search/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Information"
       ],
@@ -1365,6 +1255,7 @@
         "full": "https://www.gov.uk/government/publications/form-mps-expenses-notice-of-appeal-notice-of-appeal",
         "path": "/government/publications/form-mps-expenses-notice-of-appeal-notice-of-appeal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1372,10 +1263,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 11
-      }
+      ]
     },
     {
       "id": "HMCTS064",
@@ -1386,6 +1274,7 @@
         "full": "https://www.gov.uk/divorce",
         "path": "/divorce"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1393,10 +1282,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 69877
-      }
+      ]
     },
     {
       "id": "HMCTS065",
@@ -1407,6 +1293,7 @@
         "full": "https://www.gov.uk/legal-separation",
         "path": "/legal-separation"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1414,10 +1301,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 13355
-      }
+      ]
     },
     {
       "id": "HMCTS066",
@@ -1428,15 +1312,13 @@
         "full": "https://www.gov.uk/get-help-with-court-fees",
         "path": "/get-help-with-court-fees"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Pay"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 28503
-      }
+      ]
     },
     {
       "id": "HMCTS067",
@@ -1447,6 +1329,7 @@
         "full": "https://helpwithchildarrangements.service.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -1464,16 +1347,14 @@
         "full": "https://www.gov.uk/guidance/immigration-and-asylum-daily-court-lists",
         "path": "/guidance/immigration-and-asylum-daily-court-lists"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
       "journey": [
         "GOV.UK page",
         "Information"
-      ],
-      "data": {
-        "users": 3201
-      }
+      ]
     },
     {
       "id": "HMCTS069",
@@ -1484,6 +1365,7 @@
         "full": "https://www.gov.uk/joint-property-ownership/selling-when-an-owner-has-lost-mental-capacity",
         "path": "/joint-property-ownership/selling-when-an-owner-has-lost-mental-capacity"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1491,10 +1373,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1492
-      }
+      ]
     },
     {
       "id": "HMCTS070",
@@ -1505,6 +1384,7 @@
         "full": "https://www.employmenttribunals.service.gov.uk/apply",
         "path": "/apply"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Claim"
       ],
@@ -1521,16 +1401,14 @@
         "full": "https://www.gov.uk/jury-service",
         "path": "/jury-service"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
       "journey": [
         "GOV.UK page",
         "Information"
-      ],
-      "data": {
-        "users": 28679
-      }
+      ]
     },
     {
       "id": "HMCTS072",
@@ -1541,6 +1419,7 @@
         "full": "https://www.gov.uk/make-money-claim-online",
         "path": "/make-money-claim-online"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Claim"
       ],
@@ -1557,15 +1436,13 @@
         "full": "https://www.gov.uk/make-a-plea",
         "path": "/make-a-plea"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Appeal"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 10253
-      }
+      ]
     },
     {
       "id": "HMCTS074",
@@ -1576,6 +1453,7 @@
         "full": "https://www.gov.uk/apply-statutory-will",
         "path": "/apply-statutory-will"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1583,10 +1461,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 630
-      }
+      ]
     },
     {
       "id": "HMCTS075",
@@ -1597,6 +1472,7 @@
         "full": "https://www.gov.uk/mental-health-tribunal-victim-representations",
         "path": "/mental-health-tribunal-victim-representations"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1604,10 +1480,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 120
-      }
+      ]
     },
     {
       "id": "HMCTS076",
@@ -1618,6 +1491,7 @@
         "full": "https://www.gov.uk/emergency-court-of-protection",
         "path": "/emergency-court-of-protection"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1625,10 +1499,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2276
-      }
+      ]
     },
     {
       "id": "HMCTS077",
@@ -1639,6 +1510,7 @@
         "full": "https://www.gov.uk/statutory-demands",
         "path": "/statutory-demands"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1646,10 +1518,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 8249
-      }
+      ]
     },
     {
       "id": "HMCTS078",
@@ -1660,6 +1529,7 @@
         "full": "https://www.gov.uk/debt-deductions-from-employee-pay",
         "path": "/debt-deductions-from-employee-pay"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -1667,10 +1537,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2203
-      }
+      ]
     },
     {
       "id": "HMCTS079",
@@ -1681,6 +1548,7 @@
         "full": "https://www.gov.uk/become-deputy",
         "path": "/become-deputy"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1688,10 +1556,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 10623
-      }
+      ]
     },
     {
       "id": "HMCTS080",
@@ -1702,6 +1567,7 @@
         "full": "https://www.gov.uk/looking-after-children-divorce",
         "path": "/looking-after-children-divorce"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -1709,10 +1575,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 21624
-      }
+      ]
     },
     {
       "id": "HMCTS081",
@@ -1723,6 +1586,7 @@
         "full": "https://www.justice.gov.uk/information-access-rights/how-to-make-a-subject-access-request/make-a-subject-access-request",
         "path": "/information-access-rights/how-to-make-a-subject-access-request/make-a-subject-access-request"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1739,15 +1603,13 @@
         "full": "https://www.gov.uk/claim-compensation-for-miscarriage-of-justice",
         "path": "/claim-compensation-for-miscarriage-of-justice"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 527
-      }
+      ]
     },
     {
       "id": "HMCTS083",
@@ -1758,6 +1620,7 @@
         "full": "https://www.gov.uk/emergency-court-of-protection",
         "path": "/emergency-court-of-protection"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1765,10 +1628,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2276
-      }
+      ]
     },
     {
       "id": "HMCTS084",
@@ -1779,15 +1639,13 @@
         "full": "https://www.gov.uk/pay-court-fine-online",
         "path": "/pay-court-fine-online"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Pay"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 45499
-      }
+      ]
     },
     {
       "id": "HMCTS085",
@@ -1798,6 +1656,7 @@
         "full": "https://immigrationappealsonline.justice.gov.uk/IACFees/",
         "path": "/IACFees/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Appeal"
       ],
@@ -1814,6 +1673,7 @@
         "full": "https://www.gov.uk/pay-court-funds-office",
         "path": "/pay-court-funds-office"
       },
+      "maturity": "paper-based",
       "types": [
         "Pay"
       ],
@@ -1821,10 +1681,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 1035
-      }
+      ]
     },
     {
       "id": "HMCTS087",
@@ -1835,6 +1692,7 @@
         "full": "https://www.gov.uk/courts-tribunals/planning-court",
         "path": "/courts-tribunals/planning-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
@@ -1842,10 +1700,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 531
-      }
+      ]
     },
     {
       "id": "HMCTS088",
@@ -1856,16 +1711,14 @@
         "full": "https://www.gov.uk/possession-claim-online-recover-property",
         "path": "/possession-claim-online-recover-property"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
       "journey": [
         "GOV.UK page",
         "Digital (not digital by default)"
-      ],
-      "data": {
-        "users": 4126
-      }
+      ]
     },
     {
       "id": "HMCTS089",
@@ -1876,6 +1729,7 @@
         "full": "https://www.justice.gov.uk/courts/procedure-rules",
         "path": "/courts/procedure-rules"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -1892,6 +1746,7 @@
         "full": "https://www.gov.uk/guidance/refer-a-financial-service-or-energy-market-decision-to-a-tribunal",
         "path": "/guidance/refer-a-financial-service-or-energy-market-decision-to-a-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1899,10 +1754,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 22
-      }
+      ]
     },
     {
       "id": "HMCTS091",
@@ -1913,6 +1765,7 @@
         "full": "https://www.gov.uk/enduring-power-attorney-duties/register-an-enduring-power-of-attorney",
         "path": "/enduring-power-attorney-duties/register-an-enduring-power-of-attorney"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1920,10 +1773,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 3281
-      }
+      ]
     },
     {
       "id": "HMCTS092",
@@ -1934,6 +1784,7 @@
         "full": "https://www.gov.uk/register-childminder-childcare-provider/how-to-apply",
         "path": "/register-childminder-childcare-provider/how-to-apply"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -1941,10 +1792,7 @@
         "GOV.UK page",
         "Digital (not digital by default)",
         "Digital (3rd-party service)"
-      ],
-      "data": {
-        "users": 6200
-      }
+      ]
     },
     {
       "id": "HMCTS093",
@@ -1955,6 +1803,7 @@
         "full": "https://www.gov.uk/represent-yourself-in-court",
         "path": "/represent-yourself-in-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1962,10 +1811,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 4495
-      }
+      ]
     },
     {
       "id": "HMCTS094",
@@ -1976,6 +1822,7 @@
         "full": "https://www.gov.uk/government/publications/leave-application-for-restricted-patients",
         "path": "/government/publications/leave-application-for-restricted-patients"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -1983,10 +1830,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 168
-      }
+      ]
     },
     {
       "id": "HMCTS095",
@@ -1997,6 +1841,7 @@
         "full": "https://www.gov.uk/government/publications/request-your-personal-data-from-moj",
         "path": "/government/publications/request-your-personal-data-from-moj"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2015,6 +1860,7 @@
         "full": "https://www.gov.uk/government/collections/road-traffic-act-personal-injury-forms",
         "path": "/government/collections/road-traffic-act-personal-injury-forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2022,10 +1868,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 87
-      }
+      ]
     },
     {
       "id": "HMCTS097",
@@ -2036,6 +1879,7 @@
         "full": "https://certificatedbailiffs.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2051,6 +1895,7 @@
       "url": {
         "full": "https://sscs.venues.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2068,6 +1913,7 @@
         "full": "https://www.gov.uk/housing-tribunals",
         "path": "/housing-tribunals"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2075,10 +1921,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 3159
-      }
+      ]
     },
     {
       "id": "HMCTS100",
@@ -2089,6 +1932,7 @@
         "full": "https://www.gov.uk/guidance/take-a-business-dispute-to-the-commercial-circuit-court",
         "path": "/guidance/take-a-business-dispute-to-the-commercial-circuit-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2096,10 +1940,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 54
-      }
+      ]
     },
     {
       "id": "HMCTS101",
@@ -2110,6 +1951,7 @@
         "full": "https://www.gov.uk/guidance/take-a-case-to-the-chancery-division",
         "path": "/guidance/take-a-case-to-the-chancery-division"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2117,10 +1959,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 330
-      }
+      ]
     },
     {
       "id": "HMCTS102",
@@ -2131,6 +1970,7 @@
         "full": "https://www.gov.uk/guidance/take-a-case-to-the-technology-and-construction-court",
         "path": "/guidance/take-a-case-to-the-technology-and-construction-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2138,10 +1978,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 136
-      }
+      ]
     },
     {
       "id": "HMCTS103",
@@ -2152,6 +1989,7 @@
         "full": "https://www.gov.uk/guidance/take-a-maritime-or-shipping-dispute-to-the-admiralty-court",
         "path": "/guidance/take-a-maritime-or-shipping-dispute-to-the-admiralty-court"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2159,10 +1997,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 61
-      }
+      ]
     },
     {
       "id": "HMCTS104",
@@ -2173,6 +2008,7 @@
         "full": "https://www.gov.uk/use-or-cancel-an-enduring-power-of-attorney",
         "path": "/use-or-cancel-an-enduring-power-of-attorney"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2180,10 +2016,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 2693
-      }
+      ]
     },
     {
       "id": "HMCTS105",
@@ -2194,6 +2027,7 @@
         "full": "https://www.victimsinformationservice.org.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2210,16 +2044,14 @@
         "full": "https://www.gov.uk/war-pension-armed-forces-compensation-tribunal",
         "path": "/war-pension-armed-forces-compensation-tribunal"
       },
+      "maturity": "paper-based",
       "types": [
         "Appeal"
       ],
       "journey": [
         "GOV.UK page",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 356
-      }
+      ]
     },
     {
       "id": "HMCTS107",
@@ -2230,6 +2062,7 @@
         "full": "https://www.gov.uk/government/collections/mentally-disordered-offenders",
         "path": "/government/collections/mentally-disordered-offenders"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -2237,10 +2070,7 @@
         "GOV.UK page",
         "Form download",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 424
-      }
+      ]
     },
     {
       "id": "HMCTS108",
@@ -2251,6 +2081,7 @@
         "full": "https://administrativeappeals.decisions.tribunals.gov.uk/decisions",
         "path": "/decisions"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2267,6 +2098,7 @@
         "full": "https://administrativeappeals.decisions.tribunals.gov.uk/Aspx/default.aspx",
         "path": "/Aspx/default.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2283,15 +2115,13 @@
         "full": "https://www.gov.uk/employment-appeal-tribunal-decisions",
         "path": "/employment-appeal-tribunal-decisions"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Decision"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 1811
-      }
+      ]
     },
     {
       "id": "HMCTS111",
@@ -2302,15 +2132,13 @@
         "full": "https://www.gov.uk/employment-tribunal-decisions",
         "path": "/employment-tribunal-decisions"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Decision"
       ],
       "journey": [
         "Digital by default MoJ service"
-      ],
-      "data": {
-        "users": 13944
-      }
+      ]
     },
     {
       "id": "HMCTS112",
@@ -2321,6 +2149,7 @@
         "full": "https://carestandards.decisions.tribunals.gov.uk/Public/recentDecisions.aspx",
         "path": "/Public/recentDecisions.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2336,6 +2165,7 @@
       "url": {
         "full": "https://charity.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2351,6 +2181,7 @@
       "url": {
         "full": "https://claimsmanagement.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2366,6 +2197,7 @@
       "url": {
         "full": "https://consumercreditappeals.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2381,6 +2213,7 @@
       "url": {
         "full": "https://cicap.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2396,6 +2229,7 @@
       "url": {
         "full": "https://employmentappeals.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2411,6 +2245,7 @@
       "url": {
         "full": "https://estateagentappeals.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2427,6 +2262,7 @@
         "full": "https://financeandtax.decisions.tribunals.gov.uk/Aspx/default.aspx",
         "path": "/Aspx/default.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2442,6 +2278,7 @@
       "url": {
         "full": "https://immigrationservices.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2458,6 +2295,7 @@
         "full": "https://informationrights.decisions.tribunals.gov.uk/Public/search.aspx",
         "path": "/Public/search.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2474,6 +2312,7 @@
         "full": "https://landschamber.decisions.tribunals.gov.uk/Aspx/Default.aspx",
         "path": "/Aspx/Default.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2489,6 +2328,7 @@
       "url": {
         "full": "https://phl.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2504,6 +2344,7 @@
       "url": {
         "full": "https://siac.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2519,6 +2360,7 @@
       "url": {
         "full": "https://taxandchancery_ut.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2534,6 +2376,7 @@
       "url": {
         "full": "https://tax.decisions.tribunals.gov.uk"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2550,6 +2393,7 @@
         "full": "https://transportappeals.decisions.tribunals.gov.uk/Aspx/Default.aspx",
         "path": "/Aspx/Default.aspx"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Decision"
       ],
@@ -2567,6 +2411,7 @@
         "full": "https://www.emailaprisoner.com/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Communication"
       ],
@@ -2584,6 +2429,7 @@
         "full": "https://www.gov.uk/find-prisoner",
         "path": "/find-prisoner"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -2602,6 +2448,7 @@
         "full": "https://www.gov.uk/help-with-prison-visits",
         "path": "/help-with-prison-visits"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2619,6 +2466,7 @@
         "full": "https://www.gov.uk/nominate-community-payback-project",
         "path": "/nominate-community-payback-project"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -2637,6 +2485,7 @@
         "full": "https://data.justice.gov.uk/prisons/",
         "path": "/prisons/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2654,6 +2503,7 @@
         "full": "https://www.prisonandprobationjobs.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2672,6 +2522,7 @@
         "full": "http://www.justice.gov.uk/contacts/prison-finder",
         "path": "/contacts/prison-finder"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2689,6 +2540,7 @@
         "full": "http://www.justice.gov.uk/offenders/psis",
         "path": "/offenders/psis"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2707,6 +2559,7 @@
         "full": "http://www.justice.gov.uk/offenders/psos",
         "path": "/offenders/psos"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2725,6 +2578,7 @@
         "full": "https://www.gov.uk/send-prisoner-money",
         "path": "/send-prisoner-money"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Pay"
       ],
@@ -2742,6 +2596,7 @@
         "full": "https://www.gov.uk/prison-visits",
         "path": "/prison-visits"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2759,6 +2614,7 @@
         "full": "https://www.gov.uk/volunteer-to-check-standards-in-prison",
         "path": "/volunteer-to-check-standards-in-prison"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2776,6 +2632,7 @@
         "full": "https://www.gov.uk/browse/justice",
         "path": "/browse/justice"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -2793,6 +2650,7 @@
         "full": "https://justicejobs.tal.net/vx/lang-en-GB/mobile-0/appcentre-1/brand-2/xf-bb10f3a373b5/candidate",
         "path": "/vx/lang-en-GB/mobile-0/appcentre-1/brand-2/xf-bb10f3a373b5/candidate"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2809,6 +2667,7 @@
         "full": "http://open.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2825,6 +2684,7 @@
         "full": "http://cjsm.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Infrastructure"
       ],
@@ -2841,6 +2701,7 @@
         "full": "http://ybtj.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Information"
       ],
@@ -2858,6 +2719,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2875,6 +2737,7 @@
         "full": "https://www.gov.uk/topic/legal-aid-for-providers/forms",
         "path": "/topic/legal-aid-for-providers/forms"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2892,6 +2755,7 @@
         "full": "https://www.gov.uk/topic/legal-aid-for-providers/forms",
         "path": "/topic/legal-aid-for-providers/forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2911,6 +2775,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2928,6 +2793,7 @@
         "full": "https://www.gov.uk/government/publications/legal-aid-exceptional-case-funding-form-and-guidance",
         "path": "/government/publications/legal-aid-exceptional-case-funding-form-and-guidance"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2947,6 +2813,7 @@
         "full": "https://www.gov.uk/government/collections/controlled-work-application-forms",
         "path": "/government/collections/controlled-work-application-forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -2965,6 +2832,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Apply"
       ],
@@ -2982,6 +2850,7 @@
         "full": "https://www.gov.uk/government/publications/criminal-legal-aid-application-forms",
         "path": "/government/publications/criminal-legal-aid-application-forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3001,6 +2870,7 @@
         "full": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/500437/ioj-appeal-application.pdf",
         "path": "/government/uploads/system/uploads/attachment_data/file/500437/ioj-appeal-application.pdf"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3020,6 +2890,7 @@
         "full": "https://www.gov.uk/government/publications/crm12-duty-solicitor-application-when-moving-firm",
         "path": "/government/publications/crm12-duty-solicitor-application-when-moving-firm"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3039,6 +2910,7 @@
         "full": "https://checklegalaid.service.gov.uk/",
         "path": "/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Check"
       ],
@@ -3056,6 +2928,7 @@
         "full": "http://civil-eligibility-calculator.justice.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Check"
       ],
@@ -3073,6 +2946,7 @@
         "full": "https://www.gov.uk/find-a-legal-adviser",
         "path": "/find-a-legal-adviser"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Check"
       ],
@@ -3090,6 +2964,7 @@
         "full": "https://forms.legalservices.gov.uk/rulesaug17/web-determinations/0/investigate/LAAFraudForm/en-GB/ScreenOrder~Main~qs$2c7c51e0-464b-47e6-9df1-c31286e0b36a$global$global",
         "path": "/rulesaug17/web-determinations/0/investigate/LAAFraudForm/en-GB/ScreenOrder~Main~qs$2c7c51e0-464b-47e6-9df1-c31286e0b36a$global$global"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Report"
       ],
@@ -3107,6 +2982,7 @@
         "full": "https://claim-crown-court-defence.service.gov.uk/",
         "path": "/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3124,6 +3000,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3141,6 +3018,7 @@
         "full": "https://www.gov.uk/government/publications/crm7-non-standard-fee-magistrates-court-claim-and-appeal-form",
         "path": "/government/publications/crm7-non-standard-fee-magistrates-court-claim-and-appeal-form"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3159,6 +3037,7 @@
         "full": "https://www.gov.uk/government/publications/escape-fee-case-claim-forms",
         "path": "/government/publications/escape-fee-case-claim-forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3177,6 +3056,7 @@
         "full": "https://www.gov.uk/guidance/high-cost-cases-crime",
         "path": "/guidance/high-cost-cases-crime"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3195,6 +3075,7 @@
         "full": "https://www.gov.uk/guidance/claims-paid-out-of-the-legal-aid-fund",
         "path": "/guidance/claims-paid-out-of-the-legal-aid-fund"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3212,6 +3093,7 @@
         "full": "https://www.gov.uk/government/publications/virtual-courts-claim-form",
         "path": "/government/publications/virtual-courts-claim-form"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3230,6 +3112,7 @@
         "full": "https://www.gov.uk/guidance/claim-back-costs-from-cases-in-the-criminal-courts",
         "path": "/guidance/claim-back-costs-from-cases-in-the-criminal-courts"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3248,6 +3131,7 @@
         "full": "https://www.gov.uk/government/publications/apply-for-criminal-court-costs-from-central-funds-form-5911",
         "path": "/government/publications/apply-for-criminal-court-costs-from-central-funds-form-5911"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3265,6 +3149,7 @@
         "full": "https://www.gov.uk/government/publications/claim-court-costs-for-a-private-prosecutor-or-court-appointee",
         "path": "/government/publications/claim-court-costs-for-a-private-prosecutor-or-court-appointee"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3283,6 +3168,7 @@
         "full": "https://www.gov.uk/guidance/claim-back-costs-from-cases-in-the-criminal-courts",
         "path": "/guidance/claim-back-costs-from-cases-in-the-criminal-courts"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3300,16 +3186,14 @@
         "full": "https://www.gov.uk/government/publications/poca-forms-for-solicitors-and-advocates",
         "path": "/government/publications/poca-forms-for-solicitors-and-advocates"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
       "journey": [
         "GOV.UK page",
         "Phone or post (incl. email) service"
-      ],
-      "data": {
-        "users": 291
-      }
+      ]
     },
     {
       "id": "LAA027",
@@ -3321,6 +3205,7 @@
         "full": "https://www.gov.uk/government/publications/housing-possession-court-duty-schemes-hpcds",
         "path": "/government/publications/housing-possession-court-duty-schemes-hpcds"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3340,6 +3225,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3357,6 +3243,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3374,6 +3261,7 @@
         "full": "https://portal.legalservices.gov.uk/",
         "path": "/"
       },
+      "maturity": "not-digital-by-default",
       "types": [
         "Claim"
       ],
@@ -3391,6 +3279,7 @@
         "full": "https://www.gov.uk/topic/legal-aid-for-providers/forms",
         "path": "/topic/legal-aid-for-providers/forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Claim"
       ],
@@ -3409,6 +3298,7 @@
         "full": "https://complete-deputy-report.service.gov.uk/",
         "path": "/"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -3425,6 +3315,7 @@
         "full": "https://www.gov.uk/government/collections/lasting-power-of-attorney-forms",
         "path": "/government/collections/lasting-power-of-attorney-forms"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3443,6 +3334,7 @@
         "full": "https://www.gov.uk/find-someones-attorney-or-deputy",
         "path": "/find-someones-attorney-or-deputy"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3461,6 +3353,7 @@
         "full": "https://www.lastingpowerofattorney.service.gov.uk/home",
         "path": "/home"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -3479,6 +3372,7 @@
         "full": "https://www.gov.uk/make-decisions-for-someone",
         "path": "/make-decisions-for-someone"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -3495,6 +3389,7 @@
         "full": "https://www.gov.uk/report-concern-about-attorney-deputy",
         "path": "/report-concern-about-attorney-deputy"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -3512,6 +3407,7 @@
         "full": "https://www.gov.uk/power-of-attorney-refund",
         "path": "/power-of-attorney-refund"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -3528,6 +3424,7 @@
         "full": "https://www.gov.uk/public-trustee-executor-will",
         "path": "/public-trustee-executor-will"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3545,6 +3442,7 @@
         "full": "https://www.gov.uk/child-maintenance-if-one-parent-lives-abroad",
         "path": "/child-maintenance-if-one-parent-lives-abroad"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3563,6 +3461,7 @@
         "full": "https://www.gov.uk/tenancy-agreements-a-guide-for-landlords/if-your-tenant-dies-without-an-executor-or-a-will",
         "path": "/tenancy-agreements-a-guide-for-landlords/if-your-tenant-dies-without-an-executor-or-a-will"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3581,6 +3480,7 @@
         "full": "https://www.gov.uk/return-or-contact-abducted-child",
         "path": "/return-or-contact-abducted-child"
       },
+      "maturity": "digital-by-default",
       "types": [
         "Apply"
       ],
@@ -3597,6 +3497,7 @@
         "full": "https://www.gov.uk/check-register-notice-to-quit",
         "path": "/check-register-notice-to-quit"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3615,6 +3516,7 @@
         "full": "https://www.gov.uk/government/organisations/academy-for-social-justice-commissioning",
         "path": "/government/organisations/academy-for-social-justice-commissioning"
       },
+      "maturity": "Information site",
       "types": [
         "Information"
       ],
@@ -3631,6 +3533,7 @@
         "full": "https://www.cafcass.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3647,6 +3550,7 @@
         "full": "https://www.judiciary.gov.uk/related-offices-and-bodies/advisory-bodies/cjc/",
         "path": "/related-offices-and-bodies/advisory-bodies/cjc/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3663,6 +3567,7 @@
         "full": "https://www.gov.uk/government/organisations/civil-procedure-rules-committee",
         "path": "/government/organisations/civil-procedure-rules-committee"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3679,6 +3584,7 @@
         "full": "https://www.judiciary.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3694,6 +3600,7 @@
       "url": {
         "full": "https://ccrc.gov.uk"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3710,6 +3617,7 @@
         "full": "https://www.gov.uk/government/organisations/criminal-procedure-rule-committee",
         "path": "/government/organisations/criminal-procedure-rule-committee"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3726,6 +3634,7 @@
         "full": "https://www.judiciary.gov.uk/related-offices-and-bodies/advisory-bodies/fjc/",
         "path": "/related-offices-and-bodies/advisory-bodies/fjc/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3742,6 +3651,7 @@
         "full": "https://www.gov.uk/government/organisations/family-procedure-rule-committee",
         "path": "/government/organisations/family-procedure-rule-committee"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3757,6 +3667,7 @@
       "url": {
         "full": "hillsboroughinquests.independent.gov.uk/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3773,6 +3684,7 @@
         "full": "https://www.gov.uk/government/organisations/hm-inspectorate-of-prisons",
         "path": "/government/organisations/hm-inspectorate-of-prisons"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3789,6 +3701,7 @@
         "full": "https://www.justiceinspectorates.gov.uk/hmiprobation/",
         "path": "/hmiprobation/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3804,6 +3717,7 @@
       "url": {
         "full": "iapdeathsincustody.independent.gov.uk/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3819,6 +3733,7 @@
       "url": {
         "full": "https://my.imb.org.uk"
       },
+      "maturity": "information-site",
       "types": [
         "Member's Forum"
       ],
@@ -3835,6 +3750,7 @@
         "full": "https://www.imb.org.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3851,6 +3767,7 @@
         "full": "https://www.gov.uk/government/organisations/insolvency-rules-committee",
         "path": "/government/organisations/insolvency-rules-committee"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3867,6 +3784,7 @@
         "full": "https://www.gov.uk/government/organisations/judicial-appointments-and-conduct-ombudsman",
         "path": "/government/organisations/judicial-appointments-and-conduct-ombudsman"
       },
+      "maturity": "paper-based",
       "types": [
         "Information"
       ],
@@ -3885,15 +3803,13 @@
         "full": "https://www.gov.uk/guidance/judicial-appointments-complain-to-the-ombudsman",
         "path": "/guidance/judicial-appointments-complain-to-the-ombudsman"
       },
+      "maturity": "information-site",
       "types": [
         "Appeal"
       ],
       "journey": [
         "Information"
-      ],
-      "data": {
-        "users": 14
-      }
+      ]
     },
     {
       "id": "OTHER019",
@@ -3904,6 +3820,7 @@
         "full": "https://judicialconduct.judiciary.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3920,6 +3837,7 @@
         "full": "https://www.gov.uk/guidance/judicial-conduct-complain-to-the-ombudsman",
         "path": "/guidance/judicial-conduct-complain-to-the-ombudsman"
       },
+      "maturity": "paper-based",
       "types": [
         "Apply"
       ],
@@ -3938,6 +3856,7 @@
         "full": "https://www.gov.uk/government/organisations/judicial-office",
         "path": "/government/organisations/judicial-office"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3954,6 +3873,7 @@
         "full": "https://www.lawcom.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -3970,29 +3890,12 @@
         "full": "https://layobservers.org/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
       "journey": [
         "Information"
-      ]
-    },
-    {
-      "id": "OTHER024",
-      "name": "Legal Ombudsman",
-      "slug": "legal-ombudsman",
-      "organisation": "OTHER",
-      "url": {
-        "full": "www.legalombudsman.org.uk/"
-      },
-      "types": [
-        "Information"
-      ],
-      "journey": [
-        "Digital (not digital by default)",
-        "Digital (3rd-party service)",
-        "Form download",
-        "Phone or post (incl. email) service"
       ]
     },
     {
@@ -4003,6 +3906,7 @@
       "url": {
         "full": "www.legalombudsman.org.uk/?portfolio=complaint-form-legal"
       },
+      "maturity": "information-site",
       "types": [
         "Appeal"
       ],
@@ -4018,6 +3922,7 @@
       "url": {
         "full": "https://www.nationalpreventivemechanism.org.uk"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4034,6 +3939,7 @@
         "full": "https://www.ppo.gov.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4050,6 +3956,7 @@
         "full": "https://www.gov.uk/government/organisations/prison-services-pay-review-body",
         "path": "/government/organisations/prison-services-pay-review-body"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4065,6 +3972,7 @@
       "url": {
         "full": "https://publicdefenderservice.org.uk"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4081,6 +3989,7 @@
         "full": "https://www.gov.uk/government/organisations/tribunal-procedure-committee",
         "path": "/government/organisations/tribunal-procedure-committee"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4096,6 +4005,7 @@
       "url": {
         "full": "ubi.courtfunds.gov.uk/unclaimedbalancesindex/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4111,6 +4021,7 @@
       "url": {
         "full": "victimscommissioner.org.uk"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4127,6 +4038,7 @@
         "full": "https://www.gov.uk/government/organisations/youth-justice-board-for-england-and-wales",
         "path": "/government/organisations/youth-justice-board-for-england-and-wales"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
@@ -4143,11 +4055,33 @@
         "full": "https://yjresourcehub.uk/",
         "path": "/"
       },
+      "maturity": "information-site",
       "types": [
         "Information"
       ],
       "journey": [
         "Information"
+      ]
+    },
+    {
+      "id": "#ERROR!",
+      "name": "Legal Ombudsman",
+      "slug": "legal-ombudsman",
+      "organisation": "OTHER",
+      "description": "How to appeal to a Tribunal against the Information Commissioner's Office or ask the Tribunal to direct a response if you have not heard from the Information Commissioner’s Office.",
+      "url": {
+        "full": "www.legalombudsman.org.uk/",
+        "path": "/guidance/information-rights-appeal-against-the-commissioners-decision"
+      },
+      "maturity": "not-digital-by-default",
+      "types": [
+        "Information"
+      ],
+      "journey": [
+        "Digital (not digital by default)",
+        "Digital (3rd-party service)",
+        "Form download",
+        "Phone or post (incl. email) service"
       ]
     }
   ]

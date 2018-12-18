@@ -14,7 +14,7 @@ module.exports = {
 	isValidService: (service) => {
 		if (!service) return false
 
-			
+
 	},
 
 	isValidMaturity: (maturity) => {
@@ -32,7 +32,7 @@ module.exports = {
 
 		let data = organisations.filter( (obj) => {
 			return (obj.slug == organisation);
-		})
+		});
 
 		return data[0];
 	},
@@ -47,27 +47,39 @@ module.exports = {
 		return data;
 	},
 
+	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity) => {
+		if (!organisation) return null
+		if (!maturity) return null
+
+		let data = services.filter( (obj) => {
+	        // return (!!~obj.organisation.indexOf(organisation) && !!~obj.maturity.indexOf(maturity));
+	        return (obj.organisation == organisation && obj.maturity == maturity);
+	    });
+
+		return data;
+	},
+
 	getService: (service) => {
 		if (!service) return null
 
 		let data = services.filter( (obj) => {
 			return (obj.slug == service);
-		})
+		});
 
 		return data[0];
 	},
 
-	getServicesByMaturity: (maturity) => {
+	getServicesByDigitalMaturity: (maturity) => {
 		if (!maturity) return null
 
 		let data = services.filter( (obj) => {
 			return (obj.maturity == maturity);
-		})
+		});
 
-		return data[0];
+		return data;
 	},
 
-	getServiceMaturityTitle: (maturity) => {
+	getDigitalMaturityTitle: (maturity) => {
 		if (!maturity) return null
 
 		let title = "Hello world!";
@@ -90,6 +102,38 @@ module.exports = {
 		}
 
 		return title;
+	},
+
+	getDigitalMaturityCount: (maturity) => {
+		if (!maturity) return null
+
+		let count = 0;
+
+		let data = services.filter( (obj) => {
+			return (obj.maturity == maturity);
+		});
+
+		count = data.length;
+
+		return count;
+	},
+
+	getDigitalMaturityCountByOrganisation: (organisation, maturity) => {
+		if (!organisation) return null
+		if (!maturity) return null
+
+		console.log(organisation);
+		console.log(maturity);
+
+		let count = 0;
+
+		let data = services.filter( (obj) => {
+			return (obj.organisation == organisation && obj.maturity == maturity);
+		});
+
+		count = data.length;
+
+		return count;
 	}
 
 }
