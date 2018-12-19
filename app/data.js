@@ -48,44 +48,88 @@ module.exports = {
 	        return !!~obj.organisation.indexOf(organisation);
 	    });
 
-		// let result = [];
+		let result = [];
 
-		// if (!limit) limit = 100;
+		if (!limit) limit = 200;
 
-		// if (!page) page = 1;
+		if (!page) page = 1;
 
-		// let start = (page == 1) ? 0 : ((page * limit)-limit);
-		// let end = (page * limit);
+		let start = (page == 1) ? 0 : ((page * limit)-limit);
+		let end = (page * limit);
 
-		// let order = (sort_order == 'desc') ? true : false;
+		let order = (sort_order == 'desc') ? true : false;
 
-		// switch(sort_by) {
-		// 	case 'type':
-		// 		result = data.sort(this.sortBy('type', order, parseInt));
-		// 		break;
-		// 	default:
-		// 		result = data.sort(this.sortBy('name', order, function(a) {
-		// 			return a.toUpperCase();
-		// 		}));
-		// 		break;
-		// }
+		switch(sort_by) {
+			case 'id':
+				result = data.sort(module.exports.sortBy('id', order, parseInt));
+				break;
+			case 'organisation':
+				result = data.sort(module.exports.sortBy('organisation', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+			// case 'type':
+			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
+			// 		return a.toUpperCase();
+			// 	}));
+			// 	break;
+			default:
+				result = data.sort(module.exports.sortBy('name', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+		}
 
-		// return result.slice(start, end);
+		return result.slice(start, end);
 
-		return data;
+		// return data;
 	},
 
-	getServicesByDigitalMaturity: (maturity) => {
+	getServicesByDigitalMaturity: (maturity, sort_by, sort_order, limit, page) => {
 		if (!maturity) return null;
 
 		let data = services.filter( (obj) => {
 			return (obj.maturity == maturity);
 		});
 
-		return data;
+		let result = [];
+
+		if (!limit) limit = 200;
+
+		if (!page) page = 1;
+
+		let start = (page == 1) ? 0 : ((page * limit)-limit);
+		let end = (page * limit);
+
+		let order = (sort_order == 'desc') ? true : false;
+
+		switch(sort_by) {
+			case 'id':
+				result = data.sort(module.exports.sortBy('id', order, parseInt));
+				break;
+			case 'organisation':
+				result = data.sort(module.exports.sortBy('organisation', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+			// case 'type':
+			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
+			// 		return a.toUpperCase();
+			// 	}));
+			// 	break;
+			default:
+				result = data.sort(module.exports.sortBy('name', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+		}
+
+		return result.slice(start, end);
+
+		// return data;
 	},
 
-	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity) => {
+	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity, sort_by, sort_order, limit, page) => {
 		if (!organisation) return null;
 		if (!maturity) return null;
 
@@ -93,7 +137,41 @@ module.exports = {
 	        return (obj.organisation == organisation && obj.maturity == maturity);
 	    });
 
-		return data;
+	    let result = [];
+
+		if (!limit) limit = 200;
+
+		if (!page) page = 1;
+
+		let start = (page == 1) ? 0 : ((page * limit)-limit);
+		let end = (page * limit);
+
+		let order = (sort_order == 'desc') ? true : false;
+
+		switch(sort_by) {
+			case 'id':
+				result = data.sort(module.exports.sortBy('id', order, parseInt));
+				break;
+			case 'organisation':
+				result = data.sort(module.exports.sortBy('organisation', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+			// case 'type':
+			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
+			// 		return a.toUpperCase();
+			// 	}));
+			// 	break;
+			default:
+				result = data.sort(module.exports.sortBy('name', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
+		}
+
+		return result.slice(start, end);
+
+		// return data;
 	},
 
 	getService: (service) => {

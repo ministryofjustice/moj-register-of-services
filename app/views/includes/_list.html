@@ -1,11 +1,27 @@
 <dl class="app-check-your-answers app-check-your-answers--short">
 	<div class="app-check-your-answers__contents">
 		<dt class="app-check-your-answers__question">
-		Service name
+            {% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
+                <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% elif pagination.sort_by == 'name' and pagination.sort_order == 'asc' %}
+                <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% else %}
+                <a href="{{links.list}}?sort=name&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {%- endif %}
+				Service name
+			</a>
 		</dt>
 		{% if data.list_type == 'department' %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-			Organisation
+			{% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
+                <a href="{{links.list}}?sort=organisation&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% elif pagination.sort_by == 'organisation' and pagination.sort_order == 'asc' %}
+                <a href="{{links.list}}?sort=organisation&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% else %}
+                <a href="{{links.list}}?sort=organisation&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {%- endif %}
+				Organisation
+			</a>
 		</dd>
 		{% endif %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
