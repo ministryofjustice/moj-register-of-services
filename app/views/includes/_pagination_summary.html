@@ -4,9 +4,9 @@
 	        <span class="govuk-body">Showing </span><span class="govuk-body govuk-!-font-weight-bold">{{ pagination.start_item }} &ndash; {% if pagination.end_item <= pagination.total_count %}{{ pagination.end_item }}{% else %}{{ pagination.total_count }}{% endif %}</span><span class="govuk-body"> of {{ pagination.total_count }} results</span>
         </div>
     </div>
+    {% if pagination.page_count > 1 %}
     <div class="govuk-grid-column-one-half">
-    	{% if pagination.total_count > 10 %}
-    		{% include "./_pagination.html" %}
-    	{% endif %}
+    	{% include "./_pagination.html" %}
     </div>
+    {% endif %}
 </div>
