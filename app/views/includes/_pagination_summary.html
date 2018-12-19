@@ -1,8 +1,12 @@
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-        <p class="moj-pagination__summary govuk-body-s">Showing <span class="govuk-!-font-weight-bold">{{pagination.start_item}} &ndash; {{pagination.end_item}}</span> of {{pagination.total_count}} results</p>
+    <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+    	<div class="moj-pagination__summary">
+	        <span class="govuk-body">Showing </span><span class="govuk-body govuk-!-font-weight-bold">{{ pagination.start_item }} &ndash; {% if pagination.end_item <= pagination.total_count %}{{ pagination.end_item }}{% else %}{{ pagination.total_count }}{% endif %}</span><span class="govuk-body"> of {{ pagination.total_count }} results</span>
+        </div>
     </div>
     <div class="govuk-grid-column-one-half">
-    	{% include "./_pagination.html" %}
+    	{% if pagination.total_count > 10 %}
+    		{% include "./_pagination.html" %}
+    	{% endif %}
     </div>
 </div>

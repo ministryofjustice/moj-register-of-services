@@ -50,7 +50,7 @@ module.exports = {
 
 		let result = [];
 
-		if (!limit) limit = 200;
+		if (!limit) limit = 100;
 
 		if (!page) page = 1;
 

@@ -44,11 +44,11 @@
 
 		{% if data.services.length %}
 
-			{#% include "./includes/_pagination_summary.html" %#}
+			{% include "./includes/_pagination_summary.html" %}
 
 			{% include "./includes/_list.html" %}
 
-			{#% include "./includes/_pagination_limit.html" %#}
+			{% include "./includes/_pagination_limit.html" %}
 
 		{% else %}
 

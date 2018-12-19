@@ -1,27 +1,29 @@
-<ul class="moj-pagination">
-    <li class="moj-pagination__item">
-        {% if pagination.current_page > 1 -%}
-        <a class="moj-pagination__link" aria-label="Previous page" href="{{links.list}}?sort={{pagination.sort_by}}&amp;order={{pagination.sort_order}}&amp;limit={{pagination.limit}}&amp;page={{pagination.prev_page}}" rel="prev"><span aria-hidden="true" role="presentation">&laquo; </span>
-        {%- endif %}
-        Previous
-        {% if pagination.current_page > 1 -%}
-        </a>
-        {%- endif %}
-    </li>
-
-    {% for i in range(pagination.start_page, (pagination.end_page+1)) -%}
+<nav role="navigation" aria-label="Pagination">
+    <ul class="moj-pagination">
         <li class="moj-pagination__item">
-            <a class="moj-pagination__link {% if pagination.current_page == i %}current{%- endif %}" aria-label="Page {{i}}" href="{{links.list}}?sort={{pagination.sort_by}}&amp;order={{pagination.sort_order}}&amp;limit={{pagination.limit}}&amp;page={{i}}">{{i}}</a>
+            {% if pagination.current_page > 1 -%}
+            <a class="moj-pagination__link govuk-body" aria-label="Previous page" href="{{ links.list }}?sort={{ pagination.sort_by }}&amp;order={{ pagination.sort_order }}&amp;limit={{ pagination.limit }}&amp;page={{ pagination.prev_page }}#list" rel="prev">
+                <span aria-hidden="true" role="presentation">&laquo; </span>Previous
+            </a>
+            {% else %}
+            <span class="govuk-body">Previous</span>
+            {%- endif %}
         </li>
-    {%- endfor %}
 
-    <li class="moj-pagination__item">
-        {% if pagination.current_page < pagination.page_count -%}
-        <a class="moj-pagination__link" aria-label="Next page" href="{{links.list}}?sort={{pagination.sort_by}}&amp;order={{pagination.sort_order}}&amp;limit={{pagination.limit}}&amp;page={{pagination.next_page}}" rel="next">
-        {%- endif %}
-        Next
-        {% if pagination.current_page < pagination.page_count -%}
-        <span aria-hidden="true" role="presentation"> &raquo;</span></a>
-        {%- endif %}
-    </li>
-</ul>
+        {% for i in range(pagination.start_page, (pagination.end_page+1)) -%}
+            <li class="moj-pagination__item">
+                <a class="moj-pagination__link govuk-body {% if pagination.current_page == i %}current{%- endif %}" aria-label="Page {{ i }}" href="{{links.list}}?sort={{ pagination.sort_by }}&amp;order={{ pagination.sort_order }}&amp;limit={{ pagination.limit }}&amp;page={{ i }}#list">{{ i }}</a>
+            </li>
+        {%- endfor %}
+
+        <li class="moj-pagination__item">
+            {% if pagination.current_page < pagination.page_count -%}
+            <a class="moj-pagination__link govuk-body" aria-label="Next page" href="{{ links.list }}?sort={{ pagination.sort_by }}&amp;order={{ pagination.sort_order }}&amp;limit={{ pagination.limit }}&amp;page={{ pagination.next_page }}#list" rel="next">
+                Next<span aria-hidden="true" role="presentation"> &raquo;</span>
+            </a>
+            {% else %}
+            <span class="govuk-body">Next</span>
+            {%- endif %}
+        </li>
+    </ul>
+</nav>

@@ -31,9 +31,9 @@ router.get('/', (req, res) => {
 router.get('/maturity/:maturity/', (req, res) => {
 
 	if (!data.isValidDigitalMaturity(req.params.maturity)) {
-	
+
 		res.redirect('/');
-	
+
 	}
 	else {
 
@@ -68,6 +68,14 @@ router.get('/maturity/:maturity/', (req, res) => {
 		if (page > (page_count - 3)) {
 			start_page = page_count - 4;
 			end_page = page_count;
+		}
+
+		// We don't want negative start pages
+		start_page = Math.abs(start_page);
+
+		// Reset the start page to 1
+		if (start_page >= end_page) {
+			start_page = 1;
 		}
 
 		let prev_page = page - 1;
@@ -110,9 +118,9 @@ router.get('/maturity/:maturity/', (req, res) => {
 router.get('/:organisation/', (req, res) => {
 
 	if (req.params.organisation == 'maturity') {
-	
+
 		res.redirect('/');
-	
+
 	}
 	else {
 
@@ -149,6 +157,14 @@ router.get('/:organisation/', (req, res) => {
 		if (page > (page_count - 3)) {
 			start_page = page_count - 4;
 			end_page = page_count;
+		}
+
+		// We don't want negative start pages
+		start_page = Math.abs(start_page);
+
+		// Reset the start page to 1
+		if (start_page >= end_page) {
+			start_page = 1;
 		}
 
 		let prev_page = page - 1;
@@ -245,6 +261,14 @@ router.get('/:organisation/maturity/:maturity/', (req, res) => {
 		if (page > (page_count - 3)) {
 			start_page = page_count - 4;
 			end_page = page_count;
+		}
+
+		// We don't want negative start pages
+		start_page = Math.abs(start_page);
+
+		// Reset the start page to 1
+		if (start_page >= end_page) {
+			start_page = 1;
 		}
 
 		let prev_page = page - 1;
