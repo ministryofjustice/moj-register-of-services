@@ -2,9 +2,15 @@
 	<div class="govuk-grid-column-one-quarter">
 		<div class="moj-box">
 			<div class="moj-box__content moj-box--digital">
-				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">{{ data.counts.digital_by_default | numeral('0,00') }}</p>
+				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">
+					<a href="{{ links.types.digital_by_default }}">
+						{{ data.counts.digital_by_default | numeral('0,00') }}
+					</a>
+				</p>
 				<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-0">
-					<a href="{{ links.types.digital_by_default }}">Digital by default</a>
+					<a href="{{ links.types.digital_by_default }}">
+						<span class="govuk-visually-hidden">View all services that are classified as </span>Digital by default
+					</a>
 				</p>
 			</div>
 		</div>
@@ -12,9 +18,15 @@
 	<div class="govuk-grid-column-one-quarter">
 		<div class="moj-box">
 			<div class="moj-box__content moj-box--non-digital">
-				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">{{ data.counts.not_digital_by_default | numeral('0,00') }}</p>
+				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">
+					<a href="{{ links.types.not_digital_by_default }}">
+						{{ data.counts.not_digital_by_default | numeral('0,00') }}
+					</a>
+				</p>
 				<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-0">
-					<a href="{{ links.types.not_digital_by_default }}">Not digital by default</a>
+					<a href="{{ links.types.not_digital_by_default }}">
+						<span class="govuk-visually-hidden">View all services that are classified as </span>Not digital by default
+					</a>
 				</p>
 			</div>
 		</div>
@@ -22,9 +34,15 @@
 	<div class="govuk-grid-column-one-quarter">
 		<div class="moj-box">
 			<div class="moj-box__content moj-box--info">
-				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">{{ data.counts.information_site | numeral('0,00') }}</p>
+				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">
+					<a href="{{ links.types.information_site }}">
+						{{ data.counts.information_site | numeral('0,00') }}
+					</a>
+				</p>
 				<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-0">
-					<a href="{{ links.types.information_site }}">Information site</a>
+					<a href="{{ links.types.information_site }}">
+						<span class="govuk-visually-hidden">View all services that are classified as </span>Information site
+					</a>
 				</p>
 			</div>
 		</div>
@@ -32,9 +50,15 @@
 	<div class="govuk-grid-column-one-quarter">
 		<div class="moj-box">
 			<div class="moj-box__content moj-box--paper">
-				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">{{ data.counts.paper_based | numeral('0,00') }}</p>
+				<p class="govuk-body govuk-!-font-size-80 govuk-!-font-weight-bold govuk-!-margin-bottom-0">
+					<a href="{{ links.types.paper_based }}">
+						{{ data.counts.paper_based | numeral('0,00') }}
+					</a>
+				</p>
 				<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-0">
-					<a href="{{ links.types.paper_based }}">Paper-based</a>
+					<a href="{{ links.types.paper_based }}">
+						<span class="govuk-visually-hidden">View all services that are classified as </span>Paper-based
+					</a>
 				</p>
 			</div>
 		</div>
