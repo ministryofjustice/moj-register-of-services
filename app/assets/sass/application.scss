@@ -23,12 +23,13 @@ $govuk-global-styles: true;
 abbr[title], dfn[title] {
     cursor: help;
     outline: 0;
+    text-decoration: none;
 }
 
 abbr[title]:focus {
-  background-color: $yellow;
-  outline: 3px solid $yellow;
-  border-bottom: 1px dotted $black;
+  background-color: govuk-colour("yellow");
+  outline: 3px solid govuk-colour("yellow");
+  border-bottom: 1px dotted govuk-colour("black");
 }
 
 abbr[title]:focus::after {
