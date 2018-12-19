@@ -12,6 +12,45 @@ module.exports = function (env) {
 
   filters.numeral = numeralFilter
 
+  filters.organisationName = (abbreviation) => {
+    let name = "";
+
+    switch (abbreviation) {
+      case 'CICA':
+        name = "Criminal Injuries Compensation Authority";
+        break;
+      case 'HMCTS':
+        name = "Her Majesty's Courts and Tribunals Service";
+        break;
+      case 'HMPPS':
+        name = "Her Majesty's Prisons and Probation Service";
+        break;
+      case 'HQ':
+        name = "Head Quarters";
+        break;
+      case 'LAA':
+        name = "Legal Aid Agency";
+        break;
+      case 'OPG':
+        name = "Office of the Public Guardian";
+        break;
+      case 'OPST':
+        name = "Official Solicitor and Public Trustee";
+        break;
+      case 'YJB':
+        name = "Youth Justice Board";
+        break;
+      case 'OTHER':
+        name = "Other";
+        break;
+      default:
+        name = abbreviation;
+    }
+
+    return name;
+
+  }
+
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:
     @example:

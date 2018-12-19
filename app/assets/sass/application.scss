@@ -19,3 +19,22 @@ $govuk-global-styles: true;
 .moj-body-emphasis {
 	font-style: italic;
 }
+
+/* --------------------------------------- */
+/* Abbreviation styles */
+/* --------------------------------------- */
+
+abbr[title], dfn[title] {
+    cursor: help;
+    outline: 0;
+}
+
+abbr[title]:focus {
+  background-color: $yellow;
+  outline: 3px solid $yellow;
+  border-bottom: 1px dotted $black;
+}
+
+abbr[title]:focus::after {
+  content: " (" attr(title) ")";
+}
