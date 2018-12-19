@@ -8,6 +8,7 @@ $govuk-global-styles: true;
 @import "patterns/check-your-answers";
 @import "patterns/task-list";
 @import "patterns/related-items";
+@import "patterns/pagination";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
@@ -15,6 +16,6 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.mojuk-body-emphasis {
+.moj-body-emphasis {
 	font-style: italic;
 }

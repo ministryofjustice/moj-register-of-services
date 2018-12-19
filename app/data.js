@@ -6,19 +6,19 @@ let digital_maturity = ["digital-by-default","not-digital-by-default","informati
 module.exports = {
 
 	isValidOrganisation: (organisation) => {
-		if (!organisation) return false
+		if (!organisation) return false;
 
 
 	},
 
 	isValidService: (service) => {
-		if (!service) return false
+		if (!service) return false;
 
 
 	},
 
-	isValidMaturity: (maturity) => {
-		if (!maturity) return false
+	isValidDigitalMaturity: (maturity) => {
+		if (!maturity) return false;
 
 		return (!!~digital_maturity.indexOf(maturity));
 	},
@@ -28,7 +28,7 @@ module.exports = {
 	},
 
 	getOrganisation: (organisation) => {
-		if (!organisation) return null
+		if (!organisation) return null;
 
 		let data = organisations.filter( (obj) => {
 			return (obj.slug == organisation);
@@ -37,40 +37,46 @@ module.exports = {
 		return data[0];
 	},
 
-	getServicesByOrganisation: (organisation) => {
-		if (!organisation) return null
+	getServices: () => {
+		return services;
+	},
+
+	getServicesByOrganisation: (organisation, sort_by, sort_order, limit, page) => {
+		if (!organisation) return null;
 
 		let data = services.filter( (obj) => {
 	        return !!~obj.organisation.indexOf(organisation);
 	    });
 
+		// let result = [];
+
+		// if (!limit) limit = 100;
+
+		// if (!page) page = 1;
+
+		// let start = (page == 1) ? 0 : ((page * limit)-limit);
+		// let end = (page * limit);
+
+		// let order = (sort_order == 'desc') ? true : false;
+
+		// switch(sort_by) {
+		// 	case 'type':
+		// 		result = data.sort(this.sortBy('type', order, parseInt));
+		// 		break;
+		// 	default:
+		// 		result = data.sort(this.sortBy('name', order, function(a) {
+		// 			return a.toUpperCase();
+		// 		}));
+		// 		break;
+		// }
+
+		// return result.slice(start, end);
+
 		return data;
-	},
-
-	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity) => {
-		if (!organisation) return null
-		if (!maturity) return null
-
-		let data = services.filter( (obj) => {
-	        // return (!!~obj.organisation.indexOf(organisation) && !!~obj.maturity.indexOf(maturity));
-	        return (obj.organisation == organisation && obj.maturity == maturity);
-	    });
-
-		return data;
-	},
-
-	getService: (service) => {
-		if (!service) return null
-
-		let data = services.filter( (obj) => {
-			return (obj.slug == service);
-		});
-
-		return data[0];
 	},
 
 	getServicesByDigitalMaturity: (maturity) => {
-		if (!maturity) return null
+		if (!maturity) return null;
 
 		let data = services.filter( (obj) => {
 			return (obj.maturity == maturity);
@@ -79,8 +85,73 @@ module.exports = {
 		return data;
 	},
 
+	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity) => {
+		if (!organisation) return null;
+		if (!maturity) return null;
+
+		let data = services.filter( (obj) => {
+	        return (obj.organisation == organisation && obj.maturity == maturity);
+	    });
+
+		return data;
+	},
+
+	getService: (service) => {
+		if (!service) return null;
+
+		let data = services.filter( (obj) => {
+			return (obj.slug == service);
+		});
+
+		return data[0];
+	},
+
+	getServicesCountByOrganisation: (organisation) => {
+		if (!organisation) return 0;
+
+		let count = 0;
+
+		let data = services.filter( (obj) => {
+	        return obj.organisation == organisation;
+	    });
+
+		count = data.length;
+
+		return count;
+
+	},
+
+	getServicesCountByDigitalMaturity: (maturity) => {
+		if (!maturity) return 0;
+
+		let count = 0;
+
+		let data = services.filter( (obj) => {
+	        return obj.maturity == maturity;
+	    });
+
+		count = data.length;
+
+		return count;
+	},
+
+	getServicesCountByOrganisationAndDigitalMaturity: (organisation, maturity) => {
+		if (!organisation) return null;
+		if (!maturity) return null;
+
+		let count = 0;
+
+		let data = services.filter( (obj) => {
+			return (obj.organisation == organisation && obj.maturity == maturity);
+		});
+
+		count = data.length;
+
+		return count;
+	},
+
 	getDigitalMaturityTitle: (maturity) => {
-		if (!maturity) return null
+		if (!maturity) return null;
 
 		let title = "Hello world!";
 
@@ -104,36 +175,20 @@ module.exports = {
 		return title;
 	},
 
-	getDigitalMaturityCount: (maturity) => {
-		if (!maturity) return null
+	// See: Stackoverflow
+	// Q: https://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
+	// A: https://stackoverflow.com/a/979325
+	sortBy: (field, reverse, primer) => {
 
-		let count = 0;
+		let key = primer ?
+			(x) => { return primer(x[field]) } :
+			(x) => { return x[field] };
 
-		let data = services.filter( (obj) => {
-			return (obj.maturity == maturity);
-		});
+		reverse = !reverse ? 1 : -1;
 
-		count = data.length;
-
-		return count;
-	},
-
-	getDigitalMaturityCountByOrganisation: (organisation, maturity) => {
-		if (!organisation) return null
-		if (!maturity) return null
-
-		console.log(organisation);
-		console.log(maturity);
-
-		let count = 0;
-
-		let data = services.filter( (obj) => {
-			return (obj.organisation == organisation && obj.maturity == maturity);
-		});
-
-		count = data.length;
-
-		return count;
+		return (a, b) => {
+			return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+		}
 	}
 
 }

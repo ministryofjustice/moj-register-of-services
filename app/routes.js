@@ -18,10 +18,10 @@ router.get('/', (req, res) => {
 			data: {
 				organisations: data.getOrganisations(),
 				counts: {
-					digital_by_default: data.getDigitalMaturityCount('digital-by-default'),
-					not_digital_by_default: data.getDigitalMaturityCount('not-digital-by-default'),
-					information_site: data.getDigitalMaturityCount('information-site'),
-					paper_based: data.getDigitalMaturityCount('paper-based')
+					digital_by_default: data.getServicesCountByDigitalMaturity('digital-by-default'),
+					not_digital_by_default: data.getServicesCountByDigitalMaturity('not-digital-by-default'),
+					information_site: data.getServicesCountByDigitalMaturity('information-site'),
+					paper_based: data.getServicesCountByDigitalMaturity('paper-based')
 				}
 			}
 		});
@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
 
 router.get('/maturity/:maturity/', (req, res) => {
 
-	if (!data.isValidMaturity(req.params.maturity)) {
+	if (!data.isValidDigitalMaturity(req.params.maturity)) {
 	
 		res.redirect('/');
 	
@@ -64,7 +64,44 @@ router.get('/:organisation/', (req, res) => {
 
 		let organisation = data.getOrganisation(req.params.organisation);
 
-		console.log(organisation);
+		// Total number of providers
+		let count = data.getServicesCountByOrganisation(organisation.code);
+
+		// Prevent users putting in a limit not in the pre-defined set: 10, 25, 50, 100
+		let limit = 100;
+		if ([10,25,50,100].indexOf(parseInt(req.query.limit)) !== -1) {
+			let limit = (req.query.limit) ? parseInt(req.query.limit) : 100;
+		}
+
+		let sort_by = (req.query.sort) ? req.query.sort : 'name';
+		let sort_order = (req.query.order) ? req.query.order : 'asc';
+
+		// Current page
+		let page = (req.query.page) ? parseInt(req.query.page) : 1;
+
+		// Total number of pages
+		let page_count = Math.ceil(count / limit);
+
+		let start_page = 1;
+		let end_page = 5;
+
+		// First five pages
+		if (page > 3) {
+			start_page = page - 2;
+			end_page = page + 2;
+		}
+
+		// Last five pages
+		if (page > (page_count - 3)) {
+			start_page = page_count - 4;
+			end_page = page_count;
+		}
+
+		let prev_page = page - 1;
+		let next_page = page + 1;
+
+		let start_item = (page == 1) ? page : ((page*limit)-limit)+1;
+		let end_item = (page == 1) ? (page*limit) : ((start_item+limit)-1);
 
 		res.render('organisation',
 			{
@@ -79,13 +116,27 @@ router.get('/:organisation/', (req, res) => {
 				},
 				data: {
 					organisation: organisation,
-					services: data.getServicesByOrganisation(organisation.code),
+					services: data.getServicesByOrganisation(organisation.code, sort_by, sort_order, limit, page),
 					counts: {
-						digital_by_default: data.getDigitalMaturityCountByOrganisation(organisation.code,'digital-by-default'),
-						not_digital_by_default: data.getDigitalMaturityCountByOrganisation(organisation.code,'not-digital-by-default'),
-						information_site: data.getDigitalMaturityCountByOrganisation(organisation.code,'information-site'),
-						paper_based: data.getDigitalMaturityCountByOrganisation(organisation.code,'paper-based')
+						digital_by_default: data.getServicesCountByOrganisationAndDigitalMaturity(organisation.code, 'digital-by-default'),
+						not_digital_by_default: data.getServicesCountByOrganisationAndDigitalMaturity(organisation.code, 'not-digital-by-default'),
+						information_site: data.getServicesCountByOrganisationAndDigitalMaturity(organisation.code, 'information-site'),
+						paper_based: data.getServicesCountByOrganisationAndDigitalMaturity(organisation.code, 'paper-based')
 					}
+				},
+				pagination: {
+					total_count: count,
+					start_item: start_item,
+					end_item: end_item,
+					page_count: page_count,
+					current_page: page,
+					start_page: start_page,
+					end_page: end_page,
+					prev_page: prev_page,
+					next_page: next_page,
+					limit: limit,
+					sort_by: sort_by,
+					sort_order: sort_order
 				}
 			});
 
@@ -99,7 +150,7 @@ router.get('/:organisation/maturity/', (req, res) => {
 
 router.get('/:organisation/maturity/:maturity/', (req, res) => {
 
-	if (!data.isValidMaturity(req.params.maturity)) {
+	if (!data.isValidDigitalMaturity(req.params.maturity)) {
 
 		res.redirect('/' + req.params.organisation + '/');
 
@@ -117,11 +168,11 @@ router.get('/:organisation/maturity/:maturity/', (req, res) => {
 					title: data.getDigitalMaturityTitle(req.params.maturity),
 					list_type: 'organisation',
 					organisation: organisation,
-					services: data.getServicesByOrganisationAndDigitalMaturity(organisation.code,req.params.maturity)
+					services: data.getServicesByOrganisationAndDigitalMaturity(organisation.code, req.params.maturity)
 				}
 			});
 	}
 
 });
 
-module.exports = router
+module.exports = router;

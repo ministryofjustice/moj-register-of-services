@@ -1,0 +1,8 @@
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+        <p class="moj-pagination__summary govuk-body-s">Showing <span class="govuk-!-font-weight-bold">{{pagination.start_item}} &ndash; {{pagination.end_item}}</span> of {{pagination.total_count}} results</p>
+    </div>
+    <div class="govuk-grid-column-one-half">
+    	{% include "./_pagination.html" %}
+    </div>
+</div>
