@@ -68,11 +68,11 @@ module.exports = {
 					return a.toUpperCase();
 				}));
 				break;
-			// case 'type':
-			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
-			// 		return a.toUpperCase();
-			// 	}));
-			// 	break;
+			case 'type':
+				result = data.sort(module.exports.sortBy('type', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
 			default:
 				result = data.sort(module.exports.sortBy('name', order, (a) => {
 					return a.toUpperCase();
@@ -112,11 +112,11 @@ module.exports = {
 					return a.toUpperCase();
 				}));
 				break;
-			// case 'type':
-			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
-			// 		return a.toUpperCase();
-			// 	}));
-			// 	break;
+			case 'type':
+				result = data.sort(module.exports.sortBy('type', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
 			default:
 				result = data.sort(module.exports.sortBy('name', order, (a) => {
 					return a.toUpperCase();
@@ -157,11 +157,11 @@ module.exports = {
 					return a.toUpperCase();
 				}));
 				break;
-			// case 'type':
-			// 	result = data.sort(module.exports.sortBy('types', order, (a) => {
-			// 		return a.toUpperCase();
-			// 	}));
-			// 	break;
+			case 'type':
+				result = data.sort(module.exports.sortBy('type', order, (a) => {
+					return a.toUpperCase();
+				}));
+				break;
 			default:
 				result = data.sort(module.exports.sortBy('name', order, (a) => {
 					return a.toUpperCase();

@@ -48,7 +48,11 @@
 
 			{% include "./includes/_list.html" %}
 
-			{% include "./includes/_pagination_limit.html" %}
+			{% if pagination.total_count > 100 %}
+
+	        	{% include "./includes/_pagination_limit.html" %}
+
+	      	{% endif %}
 
 		{% else %}
 

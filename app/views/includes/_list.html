@@ -25,7 +25,16 @@
 		</dd>
 		{% endif %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-			Type
+			{% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
+                <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% elif pagination.sort_by == 'type' and pagination.sort_order == 'asc' %}
+                <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {% else %}
+                <a href="{{links.list}}?sort=type&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
+            {%- endif %}
+				Type
+			</a>
+			<!-- Type -->
 		</dd>
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 			Journey
@@ -49,11 +58,7 @@
 		</dd>
 		{% endif %}
 		<dd class="app-check-your-answers__answer">
-			<ul class="govuk-list">
-			{%- for type in service.types %}
-				<li>{{ type }}</li>
-			{% endfor -%}
-			</ul>
+			{{ service.type }}
 		</dd>
 		<dd class="app-check-your-answers__answer">
 			<ol class="govuk-list govuk-list--number">
