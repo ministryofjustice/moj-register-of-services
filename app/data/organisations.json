@@ -19,8 +19,9 @@
     },
     {
       "code": "HQ",
-      "name": "Head Quarters",
-      "slug": "head-quarters"
+      "name": "Ministry of Justice HQ",
+      "slug": "head-quarters",
+      "description": "Tools and information relating to how the justice system works for citizens of the UK."
     },
     {
       "code": "LAA",
@@ -48,7 +49,8 @@
     },
     {
       "code": "OTHER",
-      "name": "Other",
-      "slug": "other"
+      "name": "Other Ministry of Justice services",
+      "slug": "other",
+      "description": "A list of predominately information-based websites related to the Ministry of Justice's roles and responsibilities as a government department."
     }
 ]
