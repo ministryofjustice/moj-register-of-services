@@ -188,6 +188,7 @@ app.locals.cookieText = config.cookieText
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+app.locals.GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID
 
 // Session uses service name to avoid clashes with other prototypes
 const sessionName = 'govuk-prototype-kit-' + (Buffer.from(config.serviceName, 'utf8')).toString('hex')
