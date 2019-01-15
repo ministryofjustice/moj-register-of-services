@@ -1,0 +1,67 @@
+.pagination {
+  padding: 0;
+  li {
+    display: inline-block;
+    a {
+      @extend .govuk-body;
+      color: govuk-colour("blue");
+      display: inline-block;
+      padding: 15px 5px 10px 5px;
+      margin-right: 15px;
+      text-decoration: none;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+    &.active a,
+    &.active a:hover {
+      color: $govuk-link-colour;
+      -webkit-box-shadow: inset 0px -5px 0px 0px $govuk-link-colour;
+      -moz-box-shadow: inset 0px -5px 0px 0px $govuk-link-colour;
+      box-shadow: inset 0px -5px 0px 0px $govuk-link-colour;
+    }
+  }
+}
+
+.pagination__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.pagination__link {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  /*border: 1px solid $border-colour;*/
+
+  &:hover, &:focus {
+    background: $govuk-focus-colour;
+    outline: 3px solid $govuk-focus-colour;
+  }
+
+  &.current {
+    color: $govuk-text-colour;
+    font-weight: 700;
+    border: none;
+    pointer-events: none;
+    cursor: default;
+
+    &:hover, &:focus {
+      color: $govuk-text-colour;
+      background: none;
+    }
+  }
+}
+
+.pagination__summary {
+  @media (min-width: 642px) {
+    float: left;
+  }
+}
+
+.pagination__list {
+  @media (min-width: 642px) {
+    float: right;
+  }
+}

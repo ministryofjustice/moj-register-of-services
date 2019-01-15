@@ -44,15 +44,11 @@
 
 		{% if data.services.length %}
 
-			{% include "./includes/_pagination_summary.html" %}
+			{% include "./includes/_pagination_top.html" %}
 
 			{% include "./includes/_list.html" %}
 
-			{% if pagination.total_count > 100 %}
-
-	        	{% include "./includes/_pagination_limit.html" %}
-
-	      	{% endif %}
+			{% include "./includes/_pagination_bottom.html" %}
 
 		{% else %}
 

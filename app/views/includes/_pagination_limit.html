@@ -1,21 +1,14 @@
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-        <form class="moj-pagination__limit items-per-page-form" method="get" action="{{links.list}}">
-            <input type="hidden" name="sort" value="{{data['sort']}}">
-            <input type="hidden" name="order" value="{{data['order']}}">
-            <input type="hidden" name="page" value="{{data['page']}}">
-            <label class="govuk-body" for="items-per-page">Showing&nbsp;<span class="govuk-visually-hidden">results per page</span></label>
-            <select name="limit" id="items-per-page" class="govuk-input govuk-input--width-2 items-per-page">
-                {% for i in [10,25,50,100] -%}
-                <option value="{{i}}" {% if pagination.limit == i %}selected="selected"{%- endif %}>{{i}}</option>
-                {%- endfor %}
-            </select>
-            <label class="govuk-body" for="items-per-page">&nbsp;results per page</label>
-        </form>
-    </div>
-    {% if pagination.page_count > 1 %}
-    <div class="govuk-grid-column-one-half">
-        {% include "./_pagination.html" %}
-    </div>
-    {% endif %}
+<div class="pagination__limit">
+    <form id="items-per-page-form" method="get" action="{{links.list}}">
+        <input type="hidden" name="sort" value="{{data['sort']}}">
+        <input type="hidden" name="order" value="{{data['order']}}">
+        <input type="hidden" name="page" value="{{data['page']}}">
+        <label class="govuk-body" for="items-per-page">Showing&nbsp;<span class="govuk-visually-hidden">results per page</span></label>
+        <select name="limit" id="items-per-page" class="govuk-input govuk-input--width-2">
+            {% for i in [10,25,50,100] -%}
+            <option value="{{i}}" {% if pagination.limit == i %}selected="selected"{%- endif %}>{{i}}</option>
+            {%- endfor %}
+        </select>
+        <label class="govuk-body" for="items-per-page">&nbsp;results per page</label>
+    </form>
 </div>

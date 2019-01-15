@@ -4,6 +4,10 @@
   List of services provided by the Ministry of Justice, UK
 {% endblock %}
 
+{% block pageScripts %}
+{% include "./includes/_page_scripts.html" %}
+{% endblock %}
+
 {% block beforeContent %}
 {#{ govukPhaseBanner({
 	"tag": {
@@ -36,15 +40,11 @@
 
     {% if data.services.length %}
 
-      {% include "./includes/_pagination_summary.html" %}
+      {% include "./includes/_pagination_top.html" %}
 
       {% include "./includes/_list.html" %}
 
-      {% if pagination.total_count > 100 %}
-
-        {% include "./includes/_pagination_limit.html" %}
-
-      {% endif %}
+      {% include "./includes/_pagination_bottom.html" %}
 
     {% else %}
 
