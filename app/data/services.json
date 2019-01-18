@@ -2573,7 +2573,7 @@
     "organisation": "OTHER",
     "description": "Search the Unclaimed Balances Index",
     "url": {
-        "full": "ubi.courtfunds.gov.uk/unclaimedbalancesindex/"
+        "full": "https://ubi.courtfunds.gov.uk/unclaimedbalancesindex/"
     },
     "maturity": "information-site",
     "type": "Information",
@@ -2585,7 +2585,7 @@
     "organisation": "OTHER",
     "description": "The role of the Victims' Commissioner is to promote the interests of victims and witnesses, encourage good practice in their treatment, and regularly review the Code of Practice.",
     "url": {
-        "full": "victimscommissioner.org.uk"
+        "full": "https://victimscommissioner.org.uk"
     },
     "maturity": "information-site",
     "type": "Information",
