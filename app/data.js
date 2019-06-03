@@ -41,21 +41,14 @@ module.exports = {
 		return services;
 	},
 
-	getServicesByOrganisation: (organisation, sort_by, sort_order, limit, page) => {
+	getServicesByOrganisation: (organisation, sort_by, sort_order) => {
 		if (!organisation) return null;
 
 		let data = services.filter( (obj) => {
-	        return !!~obj.organisation.indexOf(organisation);
-	    });
+        return !!~obj.organisation.indexOf(organisation);
+    });
 
 		let result = [];
-
-		if (!limit) limit = 100;
-
-		if (!page) page = 1;
-
-		let start = (page == 1) ? 0 : ((page * limit)-limit);
-		let end = (page * limit);
 
 		let order = (sort_order == 'desc') ? true : false;
 
@@ -80,12 +73,10 @@ module.exports = {
 				break;
 		}
 
-		return result.slice(start, end);
-
-		// return data;
+		return result;
 	},
 
-	getServicesByDigitalMaturity: (maturity, sort_by, sort_order, limit, page) => {
+	getServicesByDigitalMaturity: (maturity, sort_by, sort_order) => {
 		if (!maturity) return null;
 
 		let data = services.filter( (obj) => {
@@ -94,13 +85,6 @@ module.exports = {
 
 		let result = [];
 
-		if (!limit) limit = 200;
-
-		if (!page) page = 1;
-
-		let start = (page == 1) ? 0 : ((page * limit)-limit);
-		let end = (page * limit);
-
 		let order = (sort_order == 'desc') ? true : false;
 
 		switch(sort_by) {
@@ -124,27 +108,18 @@ module.exports = {
 				break;
 		}
 
-		return result.slice(start, end);
-
-		// return data;
+		return result;
 	},
 
-	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity, sort_by, sort_order, limit, page) => {
+	getServicesByOrganisationAndDigitalMaturity: (organisation, maturity, sort_by, sort_order) => {
 		if (!organisation) return null;
 		if (!maturity) return null;
 
 		let data = services.filter( (obj) => {
-	        return (obj.organisation == organisation && obj.maturity == maturity);
-	    });
+        return (obj.organisation == organisation && obj.maturity == maturity);
+    });
 
-	    let result = [];
-
-		if (!limit) limit = 200;
-
-		if (!page) page = 1;
-
-		let start = (page == 1) ? 0 : ((page * limit)-limit);
-		let end = (page * limit);
+    let result = [];
 
 		let order = (sort_order == 'desc') ? true : false;
 
@@ -169,9 +144,7 @@ module.exports = {
 				break;
 		}
 
-		return result.slice(start, end);
-
-		// return data;
+		return result;
 	},
 
 	getService: (service) => {

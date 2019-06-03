@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block pageScripts %}
-{% include "./includes/_page_scripts.html" %}
+
 {% endblock %}
 
 {% block beforeContent %}
@@ -40,11 +40,7 @@
 
     {% if data.services.length %}
 
-      {% include "./includes/_pagination_top.html" %}
-
       {% include "./includes/_list.html" %}
-
-      {% include "./includes/_pagination_bottom.html" %}
 
     {% else %}
 
