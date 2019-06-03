@@ -1955,6 +1955,18 @@
     "type": "Information",
     "journey": ["Digital (not digital by default)"]
 }, {
+    "id": "HQ006",
+    "name": "Contact the Ministry of Justice",
+    "slug": "contact-the-ministry-of-justice",
+    "organisation": "HQ",
+    "description": "Use this service to send a message to the Ministry of Justice",
+    "url": {
+        "full": "https://contact-moj.dsd.io"
+    },
+    "maturity": "not-digital-by-default",
+    "type": "Communication",
+    "journey": ["Digital (not digital by default)"]
+}, {
     "id": "LAA001",
     "name": "Amend a legal certificate (via CCMS)",
     "slug": "amend-a-legal-certificate-via-ccms",
@@ -2523,7 +2535,7 @@
         "full": "https://www.gov.uk/government/organisations/academy-for-social-justice-commissioning",
         "path": "/government/organisations/academy-for-social-justice-commissioning"
     },
-    "maturity": "Information site",
+    "maturity": "information-site",
     "type": "Information",
     "journey": ["Information"]
 }, {
