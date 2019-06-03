@@ -1,6 +1,6 @@
 {
-  "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
+  "name": "register-of-services",
+  "description": "Register of public-facing services provided by the Ministry of Justice, UK",
   "version": "8.11.0",
   "private": true,
   "engines": {
