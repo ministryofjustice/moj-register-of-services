@@ -1,47 +1,43 @@
 <dl class="app-check-your-answers app-check-your-answers--short">
 	<div class="app-check-your-answers__contents">
 		<dt class="app-check-your-answers__question">
-            {% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
-                <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% elif pagination.sort_by == 'name' and pagination.sort_order == 'asc' %}
-                <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% else %}
-                <a href="{{links.list}}?sort=name&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {%- endif %}
+        {%- if not (pagination.sort_by.length and pagination.sort_order.length) %}
+            <a href="{{links.list}}?sort=name&amp;order=desc#list">
+        {% elif pagination.sort_by == 'name' and pagination.sort_order == 'asc' %}
+            <a href="{{links.list}}?sort=name&amp;order=desc#list">
+        {% else %}
+            <a href="{{links.list}}?sort=name&amp;order=asc#list">
+        {% endif -%}
 				Service name
 			</a>
 		</dt>
 		{% if data.list_type == 'department' %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-			{% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
-                <a href="{{links.list}}?sort=organisation&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% elif pagination.sort_by == 'organisation' and pagination.sort_order == 'asc' %}
-                <a href="{{links.list}}?sort=organisation&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% else %}
-                <a href="{{links.list}}?sort=organisation&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {%- endif %}
+	      {%- if not (pagination.sort_by.length and pagination.sort_order.length) %}
+            <a href="{{links.list}}?sort=organisation&amp;order=desc#list">
+        {% elif pagination.sort_by == 'organisation' and pagination.sort_order == 'asc' %}
+            <a href="{{links.list}}?sort=organisation&amp;order=desc#list">
+        {% else %}
+            <a href="{{links.list}}?sort=organisation&amp;order=asc#list">
+        {% endif -%}
 				Organisation
 			</a>
 		</dd>
 		{% endif %}
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-			{% if not (pagination.sort_by.length and pagination.sort_order.length) -%}
-                <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% elif pagination.sort_by == 'type' and pagination.sort_order == 'asc' %}
-                <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {% else %}
-                <a href="{{links.list}}?sort=type&amp;order=asc&amp;limit={{ pagination.limit }}&amp;page={{ pagination.page }}#list">
-            {%- endif %}
+	      {%- if not (pagination.sort_by.length and pagination.sort_order.length) %}
+            <a href="{{links.list}}?sort=type&amp;order=desc#list">
+        {% elif pagination.sort_by == 'type' and pagination.sort_order == 'asc' %}
+            <a href="{{links.list}}?sort=type&amp;order=desc#list">
+        {% else %}
+            <a href="{{links.list}}?sort=type&amp;order=asc#list">
+        {% endif -%}
 				Type
 			</a>
-			<!-- Type -->
 		</dd>
 		<dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
 			Journey
 		</dd>
-		<!-- <dd class="app-check-your-answers__answer govuk-!-font-weight-bold">
-			Monthly users
-		</dd> -->
 		<dd class="app-check-your-answers__change">
 			&nbsp;
 		</dd>
@@ -67,13 +63,6 @@
 			{% endfor -%}
 			</ol>
 		</dd>
-		<!-- <dd class="app-check-your-answers__answer">
-			{% if service.data.users > 0 %}
-			{{ service.data.users | numeral("0,00") }}
-			{% else %}
-			<span class="moj-body-emphasis">Unknown</span>
-			{% endif %}
-		</dd> -->
 		<dd class="app-check-your-answers__change">
 			<a href="{{ service.url.full }}">
 			View<span class="govuk-visually-hidden"> {{ service.name }}</span>
