@@ -15,9 +15,10 @@ dotenv.config()
 
 // Local dependencies
 const middleware = [
-  // require('./lib/middleware/authentication/authentication.js'),
+  require('./lib/middleware/authentication/authentication.js'),
   require('./lib/middleware/extensions/extensions.js')
 ]
+
 const config = require('./app/config.js')
 const documentationRoutes = require('./docs/documentation_routes.js')
 const packageJson = require('./package.json')
