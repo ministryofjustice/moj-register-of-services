@@ -5,12 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-{#{ govukPhaseBanner({
-	"tag": {
-		"text": "alpha"
-	},
-	"html": "This is a new service - your <a href=\"#\">feedback</a> will help us to improve it."
-}) }#}
+	{% include "./includes/_banner.html" %}
 {% endblock %}
 
 {% block content %}
