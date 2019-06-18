@@ -179,6 +179,10 @@ app.locals.cookieText = config.cookieText
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+
+// Google Analyics ID
+app.locals.GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID
+
 // extensionConfig sets up variables used to add the scripts and stylesheets to each page.
 app.locals.extensionConfig = extensions.getAppConfig()
 
