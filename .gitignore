@@ -10,3 +10,4 @@ lib/extensions/_extensions.scss
 .tmuxp.*
 node_modules/*
 public
+lib/extensions/_extensions.scss
