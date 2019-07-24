@@ -30,16 +30,16 @@ The add-on is run via the menu and associated sidebar.
 
 When the sidebar is open the following options should be configured, if not already:
 
-- Format
+- **Format**
 
   Selected format: JSON
   Selected sheet: Current sheet only
 
-- General
+- **General**
 
   Ignore empty cells ✔️
 
-- Advanced
+- **Advanced**
 
   Nested elements ✔️
 
@@ -55,4 +55,8 @@ The export may take a little time to complete, but when done it will write a fil
 
 Once you have found the data file in Google Drive, rename it to `services.json` and copy it to the `app > data` folder in the `moj-register-of-services` project.
 
-Onn your local version of the website, refresh the site and you should be see the changes updated.
+On your local version of the website, refresh the site and you should be see the changes updated.
+
+## Commit the changes to GitHub
+
+Commit the data to GitHub. In a few seconds, the changes will be deployed to the [staging website](https://moj-register-services-staging.herokuapp.com/). You will need to manually deploy to the live website via the [Heroku dashboard](https://dashboard.heroku.com/apps/moj-register-of-services).
