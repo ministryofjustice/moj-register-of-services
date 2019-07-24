@@ -33,6 +33,7 @@ When the sidebar is open the following options should be configured, if not alre
 - **Format**
 
   Selected format: JSON
+  
   Selected sheet: Current sheet only
 
 - **General**
