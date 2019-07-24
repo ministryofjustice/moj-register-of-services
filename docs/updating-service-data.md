@@ -12,7 +12,7 @@ The spreadsheet is divided into different areas corresponding to organisations w
 - Office for the Public Guardian (OPG)
 - Criminal Injuries Compensation Authority (CICA)
 - Official Solicitor and Public Trustee (OSPT)
-- Youth Justice Borad (YJB)
+- Youth Justice Board (YJB)
 - Ministry of Justice (HQ)
 - Other (a catch-all)
 
